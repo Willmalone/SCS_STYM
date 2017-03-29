@@ -1,0 +1,67 @@
+Pack d'icônes turtles sous licence GPL v3.0
+Vous pouvez copier, utiliser, changer et tout et tout même pour des projets commerciaux (mais ne revendez pas le pack tel quel please, c'est un peu pourri dans le principe.)).
+Les .psd sont fournis pour vous permettre d'effectuer les modifications qui vous conviennent.
+Inspiration "dream of the blue turtle" de Sting. Créé par Kewee cri-studio.com
+
+pour intégrer à votre forum, allez dans colours.css et modifiez ceci :
+
+/* Forum icons & Topic icons */
+.global_read													{ background-image: url("./images/announce_read.png"); }
+.global_read_mine												{ background-image: url("./images/announce_read_mine.png"); }
+.global_read_locked												{ background-image: url("./images/announce_read_locked.png"); }
+.global_read_locked_mine										{ background-image: url("./images/announce_read_locked_mine.png"); }
+.global_unread													{ background-image: url("./images/announce_unread.png"); }
+.global_unread_mine												{ background-image: url("./images/announce_unread_mine.png"); }
+.global_unread_locked											{ background-image: url("./images/announce_unread_locked.png"); }
+.global_unread_locked_mine										{ background-image: url("./images/announce_unread_locked_mine.png"); }
+
+.announce_read													{ background-image: url("./images/announce_read.png"); }
+.announce_read_mine												{ background-image: url("./images/announce_read_mine.png"); }
+.announce_read_locked											{ background-image: url("./images/announce_read_locked.png"); }
+.announce_read_locked_mine										{ background-image: url("./images/announce_read_locked_mine.png"); }
+.announce_unread												{ background-image: url("./images/announce_unread.png"); }
+.announce_unread_mine											{ background-image: url("./images/announce_unread_mine.png"); }
+.announce_unread_locked											{ background-image: url("./images/announce_unread_locked.png"); }
+.announce_unread_locked_mine									{ background-image: url("./images/announce_unread_locked_mine.png"); }
+
+.forum_link														{ background-image: url("./images/forum_link.png"); }
+.forum_read														{ background-image: url("./images/forum_read.png"); }
+.forum_read_locked												{ background-image: url("./images/forum_read_locked.png"); }
+.forum_read_subforum											{ background-image: url("./images/forum_read_subforum.png"); }
+.forum_unread													{ background-image: url("./images/forum_unread.png"); }
+.forum_unread_locked											{ background-image: url("./images/forum_unread_locked.png"); }
+.forum_unread_subforum											{ background-image: url("./images/forum_unread_subforum.png"); }
+
+.sticky_read													{ background-image: url("./images/sticky_read.png"); }
+.sticky_read_mine												{ background-image: url("./images/sticky_read_mine.png"); }
+.sticky_read_locked												{ background-image: url("./images/sticky_read_locked.png"); }
+.sticky_read_locked_mine										{ background-image: url("./images/sticky_read_locked_mine.png"); }
+.sticky_unread													{ background-image: url("./images/sticky_unread.png"); }
+.sticky_unread_mine												{ background-image: url("./images/sticky_unread_mine.png"); }
+.sticky_unread_locked											{ background-image: url("./images/sticky_unread_locked.png"); }
+.sticky_unread_locked_mine										{ background-image: url("./images/sticky_unread_locked_mine.png"); }
+
+.topic_moved													{ background-image: url("./images/topic_moved.png"); }
+.topic_read														{ background-image: url("./images/topic_read.png"); }
+.topic_read_mine												{ background-image: url("./images/topic_read_mine.png"); }
+.topic_read_hot													{ background-image: url("./images/topic_read.png"); }
+.topic_read_hot_mine											{ background-image: url("./images/topic_read_mine.png"); }
+.topic_read_locked												{ background-image: url("./images/topic_read_locked.png"); }
+.topic_read_locked_mine											{ background-image: url("./images/topic_read_locked_mine.png"); }
+.topic_unread													{ background-image: url("./images/topic_unread.png"); }
+.topic_unread_mine												{ background-image: url("./images/topic_unread_mine.png"); }
+.topic_unread_hot												{ background-image: url("./images/topic_unread_hot.png"); }
+.topic_unread_hot_mine											{ background-image: url("./images/topic_unread_hot_mine.png"); }
+.topic_unread_locked											{ background-image: url("./images/topic_unread_locked.png"); }
+.topic_unread_locked_mine										{ background-image: url("./images/topic_unread_locked_mine.png"); }
+
+.pm_read														{ background-image: url("./images/topic_read.png"); }
+.pm_unread														{ background-image: url("./images/topic_unread.png"); }
+
+et ceci :
+
+dl.icon dt .list-inner {
+    padding-left: 75px;
+}
+
+Amusez-vous bien !
