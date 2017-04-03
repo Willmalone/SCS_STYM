@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 03, 2017 at 12:01 PM
+-- Generation Time: Apr 03, 2017 at 04:44 PM
 -- Server version: 5.6.26
 -- PHP Version: 5.6.12
 
@@ -760,7 +760,8 @@ CREATE TABLE IF NOT EXISTS `phpbb_acl_users` (
 --
 
 INSERT INTO `phpbb_acl_users` (`user_id`, `forum_id`, `auth_option_id`, `auth_role_id`, `auth_setting`) VALUES
-(2, 0, 0, 5, 0);
+(2, 0, 0, 5, 0),
+(48, 0, 0, 4, 0);
 
 -- --------------------------------------------------------
 
@@ -956,7 +957,7 @@ INSERT INTO `phpbb_config` (`config_name`, `config_value`, `is_dynamic`) VALUES
 ('allow_topic_notify', '1', 0),
 ('allow_viglink_phpbb', '1', 0),
 ('allowed_schemes_links', 'http,https,ftp', 0),
-('assets_version', '2', 0),
+('assets_version', '3', 0),
 ('attachment_quota', '52428800', 0),
 ('auth_bbcode_pm', '1', 0),
 ('auth_flash_pm', '0', 0),
@@ -994,7 +995,7 @@ INSERT INTO `phpbb_config` (`config_name`, `config_value`, `is_dynamic`) VALUES
 ('bump_interval', '10', 0),
 ('bump_type', 'd', 0),
 ('cache_gc', '7200', 0),
-('cache_last_gc', '1490788148', 1),
+('cache_last_gc', '1491226788', 1),
 ('captcha_gd', '1', 0),
 ('captcha_gd_3d_noise', '1', 0),
 ('captcha_gd_fonts', '1', 0),
@@ -1154,6 +1155,9 @@ INSERT INTO `phpbb_config` (`config_name`, `config_value`, `is_dynamic`) VALUES
 ('min_pass_chars', '6', 0),
 ('min_post_chars', '1', 0),
 ('min_search_author_chars', '3', 0),
+('mobiquo_hide_forum_id', '', 0),
+('mobiquo_reg_url', '', 0),
+('mobiquo_version', '2.0.3', 0),
 ('new_member_group_default', '0', 0),
 ('new_member_post_limit', '3', 0),
 ('newest_user_colour', '', 1),
@@ -1181,7 +1185,7 @@ INSERT INTO `phpbb_config` (`config_name`, `config_value`, `is_dynamic`) VALUES
 ('ranks_path', 'images/ranks', 0),
 ('read_notification_expire_days', '30', 0),
 ('read_notification_gc', '86400', 0),
-('read_notification_last_gc', '1490747932', 1),
+('read_notification_last_gc', '1491224315', 1),
 ('record_online_date', '1490177161', 1),
 ('record_online_users', '1', 1),
 ('referer_validation', '0', 0),
@@ -1193,7 +1197,7 @@ INSERT INTO `phpbb_config` (`config_name`, `config_value`, `is_dynamic`) VALUES
 ('search_gc', '7200', 0),
 ('search_indexing_state', '', 1),
 ('search_interval', '0', 0),
-('search_last_gc', '1490788198', 1),
+('search_last_gc', '1491224319', 1),
 ('search_store_results', '1800', 0),
 ('search_type', '\\phpbb\\search\\fulltext_native', 0),
 ('secure_allow_deny', '1', 0),
@@ -1203,7 +1207,7 @@ INSERT INTO `phpbb_config` (`config_name`, `config_value`, `is_dynamic`) VALUES
 ('server_port', '80', 0),
 ('server_protocol', 'http://', 0),
 ('session_gc', '3600', 0),
-('session_last_gc', '1490788203', 1),
+('session_last_gc', '1491228547', 1),
 ('session_length', '3600', 0),
 ('site_desc', 'A short text to describe your forum', 0),
 ('site_home_text', '', 0),
@@ -1217,6 +1221,26 @@ INSERT INTO `phpbb_config` (`config_name`, `config_value`, `is_dynamic`) VALUES
 ('smtp_password', '', 0),
 ('smtp_port', '', 0),
 ('smtp_username', '', 0),
+('tapatalk_ad_filter', '', 0),
+('tapatalk_android_url', '', 0),
+('tapatalk_app_ads_enable', '1', 0),
+('tapatalk_app_banner_enable', '1', 0),
+('tapatalk_app_banner_msg', '', 0),
+('tapatalk_app_ios_id', '', 0),
+('tapatalk_auto_approve', '1', 0),
+('tapatalk_custom_replace', '', 0),
+('tapatalk_facebook_indexing_enabled', '1', 0),
+('tapatalk_forum_read_only', '', 0),
+('tapatalk_google_indexing_enabled', '1', 0),
+('tapatalk_kindle_url', '', 0),
+('tapatalk_push_key', '', 0),
+('tapatalk_register_group', '2', 0),
+('tapatalk_register_status', '', 0),
+('tapatalk_spam_status', '', 0),
+('tapatalk_sso_enabled', '1', 0),
+('tapatalk_twitter_indexing_enabled', '1', 0),
+('tapatalk_twitterfacebook_card_enabled', '1', 0),
+('tapatalkdir', 'mobiquo', 0),
 ('teampage_forums', '1', 0),
 ('teampage_memberships', '1', 0),
 ('topics_per_page', '25', 0),
@@ -1230,10 +1254,10 @@ INSERT INTO `phpbb_config` (`config_name`, `config_value`, `is_dynamic`) VALUES
 ('viglink_ask_admin', '1490185214', 0),
 ('viglink_convert_account_url', 'https://www.viglink.com/users/convertAccount?key=e4fd14f5d7f2bb6d80b8f8da1354718c&amp;subId=aa4a73eb1137ef4680c20934928a2c62&amp;expiration=1521721404&amp;signature=92157dc75391cf9c6ef9092e09e447db', 0),
 ('viglink_enabled', '1', 0),
-('viglink_last_gc', '1490788222', 1),
+('viglink_last_gc', '1491226871', 1),
 ('warnings_expire_days', '90', 0),
 ('warnings_gc', '14400', 0),
-('warnings_last_gc', '1490788144', 1);
+('warnings_last_gc', '1491229914', 1);
 
 -- --------------------------------------------------------
 
@@ -1254,7 +1278,10 @@ INSERT INTO `phpbb_config_text` (`config_name`, `config_value`) VALUES
 ('contact_admin_info', ''),
 ('contact_admin_info_bitfield', ''),
 ('contact_admin_info_flags', '7'),
-('contact_admin_info_uid', '');
+('contact_admin_info_uid', ''),
+('mobiquo_hide_forum_id', ''),
+('tapatalk_custom_replace', ''),
+('tapatalk_forum_read_only', '');
 
 -- --------------------------------------------------------
 
@@ -1315,7 +1342,8 @@ CREATE TABLE IF NOT EXISTS `phpbb_ext` (
 --
 
 INSERT INTO `phpbb_ext` (`ext_name`, `ext_active`, `ext_state`) VALUES
-('phpbb/viglink', 1, 'b:0;');
+('phpbb/viglink', 1, 'b:0;'),
+('tapatalk/tapatalk', 1, 'b:0;');
 
 -- --------------------------------------------------------
 
@@ -1645,7 +1673,7 @@ CREATE TABLE IF NOT EXISTS `phpbb_log` (
   `log_time` int(11) unsigned NOT NULL DEFAULT '0',
   `log_operation` text COLLATE utf8_bin NOT NULL,
   `log_data` mediumtext COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=107 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=122 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Dumping data for table `phpbb_log`
@@ -1757,7 +1785,22 @@ INSERT INTO `phpbb_log` (`log_id`, `log_type`, `user_id`, `forum_id`, `topic_id`
 (103, 0, 2, 0, 0, 0, 0, '::1', 1490182734, 'LOG_STYLE_EDIT_DETAILS', 'a:1:{i:0;s:16:"*SE Gamer: Light";}'),
 (104, 0, 2, 0, 0, 0, 0, '::1', 1490183155, 'LOG_ADMIN_AUTH_SUCCESS', ''),
 (105, 0, 2, 0, 0, 0, 0, '::1', 1490747095, 'LOG_ADMIN_AUTH_SUCCESS', ''),
-(106, 0, 2, 0, 0, 0, 0, '::1', 1490788217, 'LOG_ADMIN_AUTH_SUCCESS', '');
+(106, 0, 2, 0, 0, 0, 0, '::1', 1490788217, 'LOG_ADMIN_AUTH_SUCCESS', ''),
+(107, 0, 2, 0, 0, 0, 0, '::1', 1491215259, 'LOG_ADMIN_AUTH_SUCCESS', ''),
+(108, 0, 2, 0, 0, 0, 0, '::1', 1491224321, 'LOG_ADMIN_AUTH_SUCCESS', ''),
+(109, 0, 2, 0, 0, 0, 0, '::1', 1491226824, 'LOG_MODULE_ADD', 'a:1:{i:0;s:17:"ACP_MOBIQUO_TITLE";}'),
+(110, 0, 2, 0, 0, 0, 0, '::1', 1491226825, 'LOG_MODULE_ADD', 'a:1:{i:0;s:20:"ACP_MOBIQUO_SETTINGS";}'),
+(111, 0, 2, 0, 0, 0, 0, '::1', 1491226832, 'LOG_MODULE_ADD', 'a:1:{i:0;s:21:"ACP_TAPATALK_DEEPLINK";}'),
+(112, 0, 2, 0, 0, 0, 0, '::1', 1491226834, 'LOG_EXT_ENABLE', 'a:1:{i:0;s:17:"tapatalk/tapatalk";}'),
+(113, 0, 2, 0, 0, 0, 0, '::1', 1491226836, 'LOG_EXT_ENABLE', 'a:1:{i:0;s:17:"tapatalk/tapatalk";}'),
+(114, 0, 2, 0, 0, 0, 0, '::1', 1491227513, 'LOG_ADMIN_AUTH_SUCCESS', ''),
+(115, 0, 2, 0, 0, 0, 0, '::1', 1491229052, 'LOG_CONFIG_MOBIQUO', ''),
+(116, 0, 2, 0, 0, 0, 0, '::1', 1491229967, 'LOG_USER_USER_UPDATE', 'a:1:{i:0;s:7:"william";}'),
+(117, 0, 2, 0, 0, 0, 0, '::1', 1491230025, 'LOG_ACL_ADD_USER_GLOBAL_U_', 'a:1:{i:0;s:7:"william";}'),
+(118, 0, 2, 0, 0, 0, 0, '::1', 1491230364, 'LOG_ACL_TRANSFER_PERMISSIONS', 'a:1:{i:0;s:7:"william";}'),
+(119, 0, 2, 0, 0, 0, 0, '::1', 1491230393, 'LOG_ACL_RESTORE_PERMISSIONS', 'a:1:{i:0;s:7:"william";}'),
+(120, 0, 2, 0, 0, 0, 0, '::1', 1491230540, 'LOG_ACL_ADD_USER_GLOBAL_A_', 'a:1:{i:0;s:7:"william";}'),
+(121, 0, 2, 0, 0, 0, 0, '::1', 1491230604, 'LOG_USERS_ADDED', 'a:2:{i:0;s:14:"Administrators";i:1;s:7:"william";}');
 
 -- --------------------------------------------------------
 
@@ -1997,7 +2040,21 @@ INSERT INTO `phpbb_migrations` (`migration_name`, `migration_depends_on`, `migra
 ('\\phpbb\\viglink\\migrations\\viglink_ask_admin', 'a:1:{i:0;s:41:"\\phpbb\\viglink\\migrations\\viglink_data_v2";}', 1, 1, '', 1488898229, 1488898229),
 ('\\phpbb\\viglink\\migrations\\viglink_cron', 'a:1:{i:0;s:38:"\\phpbb\\viglink\\migrations\\viglink_data";}', 1, 1, '', 0, 0),
 ('\\phpbb\\viglink\\migrations\\viglink_data', 'a:1:{i:0;s:34:"\\phpbb\\db\\migration\\data\\v31x\\v312";}', 1, 1, '', 1488898221, 1488898227),
-('\\phpbb\\viglink\\migrations\\viglink_data_v2', 'a:1:{i:0;s:38:"\\phpbb\\viglink\\migrations\\viglink_data";}', 1, 1, '', 1488898227, 1488898228);
+('\\phpbb\\viglink\\migrations\\viglink_data_v2', 'a:1:{i:0;s:38:"\\phpbb\\viglink\\migrations\\viglink_data";}', 1, 1, '', 1488898227, 1488898228),
+('\\tapatalk\\tapatalk\\migrations\\release_1_0_0', 'a:1:{i:0;s:36:"\\phpbb\\db\\migration\\data\\v310\\alpha2";}', 1, 1, '', 1491226819, 1491226825),
+('\\tapatalk\\tapatalk\\migrations\\release_1_0_1', 'a:1:{i:0;s:43:"\\tapatalk\\tapatalk\\migrations\\release_1_0_0";}', 1, 1, '', 1491226825, 1491226826),
+('\\tapatalk\\tapatalk\\migrations\\release_1_1_0', 'a:2:{i:0;s:43:"\\tapatalk\\tapatalk\\migrations\\release_1_0_0";i:1;s:43:"\\tapatalk\\tapatalk\\migrations\\release_1_0_1";}', 1, 1, '', 1491226826, 1491226828),
+('\\tapatalk\\tapatalk\\migrations\\release_1_2_0', 'a:1:{i:0;s:43:"\\tapatalk\\tapatalk\\migrations\\release_1_1_0";}', 1, 1, '', 1491226828, 1491226828),
+('\\tapatalk\\tapatalk\\migrations\\release_1_2_2', 'a:1:{i:0;s:43:"\\tapatalk\\tapatalk\\migrations\\release_1_2_0";}', 1, 1, '', 1491226829, 1491226829),
+('\\tapatalk\\tapatalk\\migrations\\release_1_2_5', 'a:1:{i:0;s:43:"\\tapatalk\\tapatalk\\migrations\\release_1_2_2";}', 1, 1, '', 1491226830, 1491226830),
+('\\tapatalk\\tapatalk\\migrations\\release_1_3_0', 'a:1:{i:0;s:43:"\\tapatalk\\tapatalk\\migrations\\release_1_2_5";}', 1, 1, '', 1491226830, 1491226830),
+('\\tapatalk\\tapatalk\\migrations\\release_1_3_6', 'a:1:{i:0;s:43:"\\tapatalk\\tapatalk\\migrations\\release_1_3_0";}', 1, 1, '', 1491226831, 1491226831),
+('\\tapatalk\\tapatalk\\migrations\\release_1_3_7', 'a:1:{i:0;s:43:"\\tapatalk\\tapatalk\\migrations\\release_1_3_6";}', 1, 1, '', 1491226831, 1491226832),
+('\\tapatalk\\tapatalk\\migrations\\release_1_3_8', 'a:1:{i:0;s:43:"\\tapatalk\\tapatalk\\migrations\\release_1_3_7";}', 1, 1, '', 1491226832, 1491226832),
+('\\tapatalk\\tapatalk\\migrations\\release_2_0_0', 'a:1:{i:0;s:43:"\\tapatalk\\tapatalk\\migrations\\release_1_3_8";}', 1, 1, '', 1491226833, 1491226833),
+('\\tapatalk\\tapatalk\\migrations\\release_2_0_1', 'a:1:{i:0;s:43:"\\tapatalk\\tapatalk\\migrations\\release_2_0_0";}', 1, 1, '', 1491226833, 1491226833),
+('\\tapatalk\\tapatalk\\migrations\\release_2_0_2', 'a:1:{i:0;s:43:"\\tapatalk\\tapatalk\\migrations\\release_2_0_1";}', 1, 1, '', 1491226833, 1491226834),
+('\\tapatalk\\tapatalk\\migrations\\release_2_0_3', 'a:1:{i:0;s:43:"\\tapatalk\\tapatalk\\migrations\\release_2_0_2";}', 1, 1, '', 1491226834, 1491226834);
 
 -- --------------------------------------------------------
 
@@ -2032,7 +2089,7 @@ CREATE TABLE IF NOT EXISTS `phpbb_modules` (
   `module_langname` varchar(255) COLLATE utf8_bin NOT NULL DEFAULT '',
   `module_mode` varchar(255) COLLATE utf8_bin NOT NULL DEFAULT '',
   `module_auth` varchar(255) COLLATE utf8_bin NOT NULL DEFAULT ''
-) ENGINE=InnoDB AUTO_INCREMENT=208 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=211 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Dumping data for table `phpbb_modules`
@@ -2070,7 +2127,7 @@ INSERT INTO `phpbb_modules` (`module_id`, `module_enabled`, `module_display`, `m
 (29, 1, 1, '', 'acp', 28, 262, 265, 'ACP_AUTOMATION', '', ''),
 (30, 1, 1, '', 'acp', 28, 266, 275, 'ACP_GENERAL_TASKS', '', ''),
 (31, 1, 1, '', 'acp', 28, 276, 283, 'ACP_MODULE_MANAGEMENT', '', ''),
-(32, 1, 1, '', 'acp', 0, 285, 286, 'ACP_CAT_DOT_MODS', '', ''),
+(32, 1, 1, '', 'acp', 0, 285, 292, 'ACP_CAT_DOT_MODS', '', ''),
 (33, 1, 1, 'acp_attachments', 'acp', 3, 19, 20, 'ACP_ATTACHMENT_SETTINGS', 'attach', 'acl_a_attach'),
 (34, 1, 1, 'acp_attachments', 'acp', 11, 105, 106, 'ACP_ATTACHMENT_SETTINGS', 'attach', 'acl_a_attach'),
 (35, 1, 1, 'acp_attachments', 'acp', 11, 107, 108, 'ACP_MANAGE_EXTENSIONS', 'extensions', 'acl_a_attach'),
@@ -2245,7 +2302,10 @@ INSERT INTO `phpbb_modules` (`module_id`, `module_enabled`, `module_display`, `m
 (204, 1, 1, 'ucp_profile', 'ucp', 178, 24, 25, 'UCP_PROFILE_AUTOLOGIN_KEYS', 'autologin_keys', ''),
 (205, 1, 1, 'ucp_zebra', 'ucp', 182, 56, 57, 'UCP_ZEBRA_FRIENDS', 'friends', ''),
 (206, 1, 1, 'ucp_zebra', 'ucp', 182, 58, 59, 'UCP_ZEBRA_FOES', 'foes', ''),
-(207, 1, 1, '\\phpbb\\viglink\\acp\\viglink_module', 'acp', 3, 43, 44, 'ACP_VIGLINK_SETTINGS', 'settings', 'ext_phpbb/viglink && acl_a_board');
+(207, 1, 1, '\\phpbb\\viglink\\acp\\viglink_module', 'acp', 3, 43, 44, 'ACP_VIGLINK_SETTINGS', 'settings', 'ext_phpbb/viglink && acl_a_board'),
+(208, 1, 1, '', 'acp', 32, 286, 291, 'ACP_MOBIQUO_TITLE', '', ''),
+(209, 1, 1, '\\tapatalk\\tapatalk\\acp\\main_module', 'acp', 208, 287, 288, 'ACP_MOBIQUO_SETTINGS', 'mobiquo', 'ext_tapatalk/tapatalk && acl_a_board'),
+(210, 1, 1, '\\tapatalk\\tapatalk\\acp\\main_module', 'acp', 208, 289, 290, 'ACP_TAPATALK_DEEPLINK', 'mobiquo_deeplink', 'ext_tapatalk/tapatalk && acl_a_board');
 
 -- --------------------------------------------------------
 
@@ -2274,7 +2334,31 @@ CREATE TABLE IF NOT EXISTS `phpbb_notification_types` (
   `notification_type_id` smallint(4) unsigned NOT NULL,
   `notification_type_name` varchar(255) COLLATE utf8_bin NOT NULL DEFAULT '',
   `notification_type_enabled` tinyint(1) unsigned NOT NULL DEFAULT '1'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Dumping data for table `phpbb_notification_types`
+--
+
+INSERT INTO `phpbb_notification_types` (`notification_type_id`, `notification_type_name`, `notification_type_enabled`) VALUES
+(1, 'notification.type.admin_activate_user', 1),
+(2, 'notification.type.approve_post', 1),
+(3, 'notification.type.approve_topic', 1),
+(4, 'notification.type.bookmark', 1),
+(5, 'notification.type.disapprove_post', 1),
+(6, 'notification.type.disapprove_topic', 1),
+(7, 'notification.type.group_request', 1),
+(8, 'notification.type.group_request_approved', 1),
+(9, 'notification.type.pm', 1),
+(10, 'notification.type.post', 1),
+(11, 'notification.type.post_in_queue', 1),
+(12, 'notification.type.quote', 1),
+(13, 'notification.type.report_pm', 1),
+(14, 'notification.type.report_pm_closed', 1),
+(15, 'notification.type.report_post', 1),
+(16, 'notification.type.report_post_closed', 1),
+(17, 'notification.type.topic', 1),
+(18, 'notification.type.topic_in_queue', 1);
 
 -- --------------------------------------------------------
 
@@ -2741,7 +2825,7 @@ CREATE TABLE IF NOT EXISTS `phpbb_sessions` (
 --
 
 INSERT INTO `phpbb_sessions` (`session_id`, `session_user_id`, `session_last_visit`, `session_start`, `session_time`, `session_ip`, `session_browser`, `session_forwarded_for`, `session_page`, `session_viewonline`, `session_autologin`, `session_admin`, `session_forum_id`) VALUES
-('710f328655a04895377fd489f5854573', 2, 1490748501, 1490788216, 1490788393, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36', '', 'adm/index.php?i=styles', 1, 0, 1, 0);
+('3914ef0f1b9270c0db100166142bf041', 2, 1491226921, 1491227513, 1491230636, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36', '', 'ucp.php?action=list&g=5&i=ucp_groups&mode=manage', 1, 0, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -2870,6 +2954,24 @@ INSERT INTO `phpbb_styles` (`style_id`, `style_name`, `style_copyright`, `style_
 (12, 'Blue Turtle', '© Cri|Studio, 2015-2017', 1, 'K_Blue_Turtle', '+Ng=', 1, 'prosilver'),
 (13, 'Flat Style', '© Ian Bradley 2017', 1, 'flat-style', '+Ng=', 0, ''),
 (14, 'Green-Style-Slim', '© phpBB Limited, 2016', 1, 'Green-Style-Slim', '+Ng=', 7, 'prosilver/Green-Style');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `phpbb_tapatalk_users`
+--
+
+CREATE TABLE IF NOT EXISTS `phpbb_tapatalk_users` (
+  `userid` int(10) unsigned NOT NULL DEFAULT '0',
+  `announcement` smallint(4) unsigned NOT NULL DEFAULT '1',
+  `pm` smallint(4) unsigned NOT NULL DEFAULT '1',
+  `subscribe` smallint(4) unsigned NOT NULL DEFAULT '1',
+  `quote` smallint(4) unsigned NOT NULL DEFAULT '1',
+  `liked` smallint(4) unsigned NOT NULL DEFAULT '1',
+  `tag` smallint(4) unsigned NOT NULL DEFAULT '1',
+  `newtopic` smallint(4) unsigned NOT NULL DEFAULT '1',
+  `updated` int(11) unsigned DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------
 
@@ -3071,8 +3173,8 @@ CREATE TABLE IF NOT EXISTS `phpbb_users` (
 --
 
 INSERT INTO `phpbb_users` (`user_id`, `user_type`, `group_id`, `user_permissions`, `user_perm_from`, `user_ip`, `user_regdate`, `username`, `username_clean`, `user_password`, `user_passchg`, `user_email`, `user_email_hash`, `user_birthday`, `user_lastvisit`, `user_lastmark`, `user_lastpost_time`, `user_lastpage`, `user_last_confirm_key`, `user_last_search`, `user_warnings`, `user_last_warning`, `user_login_attempts`, `user_inactive_reason`, `user_inactive_time`, `user_posts`, `user_lang`, `user_timezone`, `user_dateformat`, `user_style`, `user_rank`, `user_colour`, `user_new_privmsg`, `user_unread_privmsg`, `user_last_privmsg`, `user_message_rules`, `user_full_folder`, `user_emailtime`, `user_topic_show_days`, `user_topic_sortby_type`, `user_topic_sortby_dir`, `user_post_show_days`, `user_post_sortby_type`, `user_post_sortby_dir`, `user_notify`, `user_notify_pm`, `user_notify_type`, `user_allow_pm`, `user_allow_viewonline`, `user_allow_viewemail`, `user_allow_massemail`, `user_options`, `user_avatar`, `user_avatar_type`, `user_avatar_width`, `user_avatar_height`, `user_sig`, `user_sig_bbcode_uid`, `user_sig_bbcode_bitfield`, `user_jabber`, `user_actkey`, `user_newpasswd`, `user_form_salt`, `user_new`, `user_reminded`, `user_reminded_time`) VALUES
-(1, 2, 1, '00000000000g13ydq8\nhwba88000000\nhwba88000000\n\n\n\n\n\nhwba88000000\nhwba88000000\nhwba88000000\nhwba88000000\n\nhwba88000000\nhwba88000000\nhwba88000000\nhwba88000000', 0, '', 1488898091, 'Anonymous', 'anonymous', '', 0, '', 0, '', 0, 0, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 'en', '', 'd M Y H:i', 1, 0, '', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 1, 1, 1, 0, 230271, '', '', 0, 0, '', '', '', '', '', '', '492b66199ae8196f', 1, 0, 0),
-(2, 3, 5, 'zik0zjzik0zjzik0zg\nhwba88000000\nzik0zjzieeps\n\n\n\n\n\nzik0zjzieeps\nzik0zjzieeps\nzik0zjzieeps\nzik0zjzieeps\n\nzik0zjzieeps\nzik0zjzieeps\nzik0zjzieeps\nzik0zjzieeps', 0, '::1', 1488898091, 'ting', 'ting', '$2y$10$MQuxhAHPllIWThQ3gfF9ru.dEHdVTUDHoR330FsK40AvaP0sT5bZ2', 0, 'yassin.ting@gmail.com', 277347245621, '', 1490748501, 0, 0, 'index.php', '', 0, 0, 0, 0, 0, 0, 1, 'en', '', 'D M d, Y g:i a', 1, 1, 'AA0000', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 1, 1, 1, 1, 230271, '', '', 0, 0, '', '', '', '', '', '', '1be5db6e65b1f723', 1, 0, 0),
+(1, 2, 1, '', 0, '', 1488898091, 'Anonymous', 'anonymous', '', 0, '', 0, '', 0, 0, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 'en', '', 'd M Y H:i', 1, 0, '', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 1, 1, 1, 0, 230271, '', '', 0, 0, '', '', '', '', '', '', '2fdcf7072a016f77', 1, 0, 0),
+(2, 3, 5, 'zik0zjzik0zjzik0zg\nhwba88000000\nzik0zjzieeps\n\n\n\n\n\nzik0zjzieeps\nzik0zjzieeps\nzik0zjzieeps\nzik0zjzieeps\n\nzik0zjzieeps\nzik0zjzieeps\nzik0zjzieeps\nzik0zjzieeps', 0, '::1', 1488898091, 'ting', 'ting', '$2y$10$MQuxhAHPllIWThQ3gfF9ru.dEHdVTUDHoR330FsK40AvaP0sT5bZ2', 0, 'yassin.ting@gmail.com', 277347245621, '', 1491226921, 0, 0, 'adm/index.php?i=styles', '', 0, 0, 0, 0, 0, 0, 1, 'en', '', 'D M d, Y g:i a', 1, 1, 'AA0000', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 1, 1, 1, 1, 230271, '', '', 0, 0, '', '', '', '', '', '', 'c8e5002e319e8e79', 1, 0, 0),
 (3, 2, 6, '', 0, '', 1488898097, 'AdsBot [Google]', 'adsbot [google]', '', 1488898097, '', 0, '', 0, 1488898097, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 'en', 'UTC', 'D M d, Y g:i a', 1, 0, '9E8DA7', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 0, 1, 1, 0, 230271, '', '', 0, 0, '', '', '', '', '', '', 'cd3584f2cbe91b18', 0, 0, 0),
 (4, 2, 6, '', 0, '', 1488898098, 'Alexa [Bot]', 'alexa [bot]', '', 1488898098, '', 0, '', 0, 1488898098, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 'en', 'UTC', 'D M d, Y g:i a', 1, 0, '9E8DA7', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 0, 1, 1, 0, 230271, '', '', 0, 0, '', '', '', '', '', '', 'c991ae8868100dcc', 0, 0, 0),
 (5, 2, 6, '', 0, '', 1488898099, 'Alta Vista [Bot]', 'alta vista [bot]', '', 1488898099, '', 0, '', 0, 1488898099, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 'en', 'UTC', 'D M d, Y g:i a', 1, 0, '9E8DA7', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 0, 1, 1, 0, 230271, '', '', 0, 0, '', '', '', '', '', '', '850931c83d347a2a', 0, 0, 0),
@@ -3118,7 +3220,7 @@ INSERT INTO `phpbb_users` (`user_id`, `user_type`, `group_id`, `user_permissions
 (45, 2, 6, '', 0, '', 1488898118, 'Yahoo Slurp [Bot]', 'yahoo slurp [bot]', '', 1488898118, '', 0, '', 0, 1488898118, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 'en', 'UTC', 'D M d, Y g:i a', 1, 0, '9E8DA7', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 0, 1, 1, 0, 230271, '', '', 0, 0, '', '', '', '', '', '', '265868574ee5e69f', 0, 0, 0),
 (46, 2, 6, '', 0, '', 1488898119, 'Yahoo [Bot]', 'yahoo [bot]', '', 1488898119, '', 0, '', 0, 1488898119, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 'en', 'UTC', 'D M d, Y g:i a', 1, 0, '9E8DA7', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 0, 1, 1, 0, 230271, '', '', 0, 0, '', '', '', '', '', '', '79cea51bbddf99df', 0, 0, 0),
 (47, 2, 6, '', 0, '', 1488898119, 'YahooSeeker [Bot]', 'yahooseeker [bot]', '', 1488898119, '', 0, '', 0, 1488898119, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 'en', 'UTC', 'D M d, Y g:i a', 1, 0, '9E8DA7', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 0, 1, 1, 0, 230271, '', '', 0, 0, '', '', '', '', '', '', '5102a7735669e596', 0, 0, 0),
-(48, 0, 2, '', 0, '::1', 1490179231, 'william', 'william', '$2y$10$zcv5zypxs2.L3xib7zfHt.u7TiMusBX4p1278Mpan/mzXCTZaaN7.', 1490179231, 'william@cct.ie', 333011526114, '', 1490179274, 1490179231, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 'en', 'UTC', 'D M d, Y g:i a', 1, 0, '', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 1, 1, 1, 1, 230271, '', '', 0, 0, '', '', '', '', '', '', 'b6858c16282077f2', 1, 0, 0);
+(48, 3, 2, '', 0, '::1', 1490179231, 'william', 'william', '$2y$10$zcv5zypxs2.L3xib7zfHt.u7TiMusBX4p1278Mpan/mzXCTZaaN7.', 1490179231, 'william@cct.ie', 333011526114, '', 1490179274, 1490179231, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 'en', 'UTC', 'D M d, Y g:i a', 1, 0, '', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 1, 1, 1, 1, 230271, '', '', 0, 0, '', '', '', '', '', '', 'b6858c16282077f2', 1, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -3188,7 +3290,8 @@ INSERT INTO `phpbb_user_group` (`group_id`, `user_id`, `group_leader`, `user_pen
 (6, 46, 0, 0),
 (6, 47, 0, 0),
 (2, 48, 0, 0),
-(7, 48, 0, 0);
+(7, 48, 0, 0),
+(5, 48, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -3771,6 +3874,12 @@ ALTER TABLE `phpbb_styles`
   ADD UNIQUE KEY `style_name` (`style_name`);
 
 --
+-- Indexes for table `phpbb_tapatalk_users`
+--
+ALTER TABLE `phpbb_tapatalk_users`
+  ADD PRIMARY KEY (`userid`);
+
+--
 -- Indexes for table `phpbb_teampage`
 --
 ALTER TABLE `phpbb_teampage`
@@ -3919,12 +4028,12 @@ ALTER TABLE `phpbb_lang`
 -- AUTO_INCREMENT for table `phpbb_log`
 --
 ALTER TABLE `phpbb_log`
-  MODIFY `log_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=107;
+  MODIFY `log_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=122;
 --
 -- AUTO_INCREMENT for table `phpbb_modules`
 --
 ALTER TABLE `phpbb_modules`
-  MODIFY `module_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=208;
+  MODIFY `module_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=211;
 --
 -- AUTO_INCREMENT for table `phpbb_notifications`
 --
@@ -3934,7 +4043,7 @@ ALTER TABLE `phpbb_notifications`
 -- AUTO_INCREMENT for table `phpbb_notification_types`
 --
 ALTER TABLE `phpbb_notification_types`
-  MODIFY `notification_type_id` smallint(4) unsigned NOT NULL AUTO_INCREMENT;
+  MODIFY `notification_type_id` smallint(4) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=19;
 --
 -- AUTO_INCREMENT for table `phpbb_posts`
 --
