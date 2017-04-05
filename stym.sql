@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 03, 2017 at 04:44 PM
+-- Generation Time: Apr 05, 2017 at 05:37 PM
 -- Server version: 5.6.26
 -- PHP Version: 5.6.12
 
@@ -124,7 +124,11 @@ INSERT INTO `phpbb_acl_groups` (`group_id`, `forum_id`, `auth_option_id`, `auth_
 (4, 15, 0, 21, 0),
 (1, 15, 0, 17, 0),
 (7, 15, 0, 24, 0),
-(5, 15, 0, 14, 0);
+(5, 15, 0, 14, 0),
+(1, 17, 0, 17, 0),
+(2, 17, 0, 17, 0),
+(3, 17, 0, 17, 0),
+(6, 17, 0, 17, 0);
 
 -- --------------------------------------------------------
 
@@ -824,6 +828,13 @@ CREATE TABLE IF NOT EXISTS `phpbb_bbcodes` (
   `second_pass_replace` mediumtext COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
+--
+-- Dumping data for table `phpbb_bbcodes`
+--
+
+INSERT INTO `phpbb_bbcodes` (`bbcode_id`, `bbcode_tag`, `bbcode_helpline`, `display_on_posting`, `bbcode_match`, `bbcode_tpl`, `first_pass_match`, `first_pass_replace`, `second_pass_match`, `second_pass_replace`) VALUES
+(13, 'IRC', '', 0, '[IRC][/IRC]', '<iframe src="http://webchat.freenode.net/?channels=stym" width="1024" height="400"></iframe>', '!\\[irc\\]\\[/irc\\]!i', '[irc:$uid][/irc:$uid]', '[irc:$uid][/irc:$uid]', '');
+
 -- --------------------------------------------------------
 
 --
@@ -995,7 +1006,7 @@ INSERT INTO `phpbb_config` (`config_name`, `config_value`, `is_dynamic`) VALUES
 ('bump_interval', '10', 0),
 ('bump_type', 'd', 0),
 ('cache_gc', '7200', 0),
-('cache_last_gc', '1491226788', 1),
+('cache_last_gc', '1491404154', 1),
 ('captcha_gd', '1', 0),
 ('captcha_gd_3d_noise', '1', 0),
 ('captcha_gd_fonts', '1', 0),
@@ -1018,7 +1029,7 @@ INSERT INTO `phpbb_config` (`config_name`, `config_value`, `is_dynamic`) VALUES
 ('coppa_mail', '', 0),
 ('cron_lock', '0', 1),
 ('database_gc', '604800', 0),
-('database_last_gc', '1490788209', 1),
+('database_last_gc', '1491394485', 1),
 ('dbms_version', '5.6.26', 0),
 ('default_dateformat', 'D M d, Y g:i a', 0),
 ('default_lang', 'en', 0),
@@ -1164,8 +1175,8 @@ INSERT INTO `phpbb_config` (`config_name`, `config_value`, `is_dynamic`) VALUES
 ('newest_user_id', '48', 1),
 ('newest_username', 'william', 1),
 ('num_files', '0', 1),
-('num_posts', '1', 1),
-('num_topics', '1', 1),
+('num_posts', '2', 1),
+('num_topics', '2', 1),
 ('num_users', '2', 1),
 ('override_user_style', '0', 0),
 ('pass_complex', 'PASS_TYPE_ANY', 0),
@@ -1185,9 +1196,9 @@ INSERT INTO `phpbb_config` (`config_name`, `config_value`, `is_dynamic`) VALUES
 ('ranks_path', 'images/ranks', 0),
 ('read_notification_expire_days', '30', 0),
 ('read_notification_gc', '86400', 0),
-('read_notification_last_gc', '1491224315', 1),
-('record_online_date', '1490177161', 1),
-('record_online_users', '1', 1),
+('read_notification_last_gc', '1491404163', 1),
+('record_online_date', '1491394478', 1),
+('record_online_users', '2', 1),
 ('referer_validation', '0', 0),
 ('remote_upload_verify', '0', 0),
 ('require_activation', '0', 0),
@@ -1197,7 +1208,7 @@ INSERT INTO `phpbb_config` (`config_name`, `config_value`, `is_dynamic`) VALUES
 ('search_gc', '7200', 0),
 ('search_indexing_state', '', 1),
 ('search_interval', '0', 0),
-('search_last_gc', '1491224319', 1),
+('search_last_gc', '1491404734', 1),
 ('search_store_results', '1800', 0),
 ('search_type', '\\phpbb\\search\\fulltext_native', 0),
 ('secure_allow_deny', '1', 0),
@@ -1207,7 +1218,7 @@ INSERT INTO `phpbb_config` (`config_name`, `config_value`, `is_dynamic`) VALUES
 ('server_port', '80', 0),
 ('server_protocol', 'http://', 0),
 ('session_gc', '3600', 0),
-('session_last_gc', '1491228547', 1),
+('session_last_gc', '1491404140', 1),
 ('session_length', '3600', 0),
 ('site_desc', 'A short text to describe your forum', 0),
 ('site_home_text', '', 0),
@@ -1254,10 +1265,10 @@ INSERT INTO `phpbb_config` (`config_name`, `config_value`, `is_dynamic`) VALUES
 ('viglink_ask_admin', '1490185214', 0),
 ('viglink_convert_account_url', 'https://www.viglink.com/users/convertAccount?key=e4fd14f5d7f2bb6d80b8f8da1354718c&amp;subId=aa4a73eb1137ef4680c20934928a2c62&amp;expiration=1521721404&amp;signature=92157dc75391cf9c6ef9092e09e447db', 0),
 ('viglink_enabled', '1', 0),
-('viglink_last_gc', '1491226871', 1),
+('viglink_last_gc', '1491394494', 1),
 ('warnings_expire_days', '90', 0),
 ('warnings_gc', '14400', 0),
-('warnings_last_gc', '1491229914', 1);
+('warnings_last_gc', '1491394479', 1);
 
 -- --------------------------------------------------------
 
@@ -1504,7 +1515,7 @@ CREATE TABLE IF NOT EXISTS `phpbb_forums` (
   `prune_shadow_days` mediumint(8) unsigned NOT NULL DEFAULT '7',
   `prune_shadow_freq` mediumint(8) unsigned NOT NULL DEFAULT '1',
   `prune_shadow_next` int(11) NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Dumping data for table `phpbb_forums`
@@ -1520,7 +1531,8 @@ INSERT INTO `phpbb_forums` (`forum_id`, `parent_id`, `left_id`, `right_id`, `for
 (13, 9, 10, 11, '', 'Welcome', '', '', 7, '', '', '', 0, '', '', '', '', 7, '', 0, 1, 0, 0, 0, '', 0, '', '', 48, 0, 1, 0, 0, 0, 7, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0),
 (14, 10, 14, 15, '', 'Welcome', '', '', 7, '', '', '', 0, '', '', '', '', 7, '', 0, 1, 0, 0, 0, '', 0, '', '', 48, 0, 1, 0, 0, 0, 7, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0),
 (15, 11, 18, 19, '', 'Welcome', '', '', 7, '', '', '', 0, '', '', '', '', 7, '', 0, 1, 0, 0, 0, '', 0, '', '', 48, 0, 1, 0, 0, 0, 7, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0),
-(16, 8, 6, 7, 'a:1:{i:8;a:2:{i:0;s:6:"Year 1";i:1;i:1;}}', 'Welcome', '<t>This is a Year 1 Section</t>', '', 7, '', '', '', 0, '', '', '', '', 7, '', 0, 1, 0, 0, 0, '', 0, '', '', 48, 0, 1, 0, 0, 0, 7, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0);
+(16, 8, 6, 7, 'a:1:{i:8;a:2:{i:0;s:6:"Year 1";i:1;i:1;}}', 'Welcome', '<t>This is a Year 1 Section</t>', '', 7, '', '', '', 0, '', '', '', '', 7, '', 0, 1, 0, 2, 2, 'test', 1491231563, 'ting', 'AA0000', 48, 0, 1, 0, 0, 0, 7, 7, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 7, 1, 0),
+(17, 0, 21, 22, '', 'Student Community Chat', '<r><IRC><s>[IRC]</s><e>[/IRC]</e></IRC></r>', '', 7, '', '', '', 0, '', '', '', '', 7, '', 0, 2, 0, 0, 0, '', 0, '', '', 32, 0, 1, 0, 0, 0, 7, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -1545,6 +1557,14 @@ CREATE TABLE IF NOT EXISTS `phpbb_forums_track` (
   `forum_id` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `mark_time` int(11) unsigned NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Dumping data for table `phpbb_forums_track`
+--
+
+INSERT INTO `phpbb_forums_track` (`user_id`, `forum_id`, `mark_time`) VALUES
+(2, 2, 1491404805),
+(2, 16, 1491231563);
 
 -- --------------------------------------------------------
 
@@ -1673,7 +1693,7 @@ CREATE TABLE IF NOT EXISTS `phpbb_log` (
   `log_time` int(11) unsigned NOT NULL DEFAULT '0',
   `log_operation` text COLLATE utf8_bin NOT NULL,
   `log_data` mediumtext COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=122 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=132 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Dumping data for table `phpbb_log`
@@ -1800,7 +1820,17 @@ INSERT INTO `phpbb_log` (`log_id`, `log_type`, `user_id`, `forum_id`, `topic_id`
 (118, 0, 2, 0, 0, 0, 0, '::1', 1491230364, 'LOG_ACL_TRANSFER_PERMISSIONS', 'a:1:{i:0;s:7:"william";}'),
 (119, 0, 2, 0, 0, 0, 0, '::1', 1491230393, 'LOG_ACL_RESTORE_PERMISSIONS', 'a:1:{i:0;s:7:"william";}'),
 (120, 0, 2, 0, 0, 0, 0, '::1', 1491230540, 'LOG_ACL_ADD_USER_GLOBAL_A_', 'a:1:{i:0;s:7:"william";}'),
-(121, 0, 2, 0, 0, 0, 0, '::1', 1491230604, 'LOG_USERS_ADDED', 'a:2:{i:0;s:14:"Administrators";i:1;s:7:"william";}');
+(121, 0, 2, 0, 0, 0, 0, '::1', 1491230604, 'LOG_USERS_ADDED', 'a:2:{i:0;s:14:"Administrators";i:1;s:7:"william";}'),
+(122, 0, 2, 0, 0, 0, 0, '::1', 1491394490, 'LOG_ADMIN_AUTH_SUCCESS', ''),
+(123, 0, 2, 0, 0, 0, 0, '::1', 1491404168, 'LOG_ADMIN_AUTH_SUCCESS', ''),
+(124, 0, 2, 0, 0, 0, 0, '::1', 1491404426, 'LOG_BBCODE_ADD', 'a:1:{i:0;s:3:"IRC";}'),
+(125, 0, 2, 0, 0, 0, 0, '::1', 1491404620, 'LOG_FORUM_ADD', 'a:1:{i:0;s:22:"Student Community Chat";}'),
+(126, 0, 2, 0, 0, 0, 0, '::1', 1491404960, 'LOG_ACL_ADD_FORUM_LOCAL_F_', 'a:2:{i:0;s:22:"Student Community Chat";i:1;s:41:"<span class="sep">Registered users</span>";}'),
+(127, 0, 2, 0, 0, 0, 0, '::1', 1491405239, 'LOG_FORUM_EDIT', 'a:1:{i:0;s:22:"Student Community Chat";}'),
+(128, 0, 2, 0, 0, 0, 0, '::1', 1491405239, 'LOG_FORUM_COPIED_PERMISSIONS', 'a:2:{i:0;s:7:"General";i:1;s:22:"Student Community Chat";}'),
+(129, 0, 2, 0, 0, 0, 0, '::1', 1491405303, 'LOG_ADMIN_AUTH_SUCCESS', ''),
+(130, 0, 2, 0, 0, 0, 0, '::1', 1491405374, 'LOG_FORUM_EDIT', 'a:1:{i:0;s:22:"Student Community Chat";}'),
+(131, 0, 2, 0, 0, 0, 0, '::1', 1491405374, 'LOG_FORUM_COPIED_PERMISSIONS', 'a:2:{i:0;s:7:"General";i:1;s:22:"Student Community Chat";}');
 
 -- --------------------------------------------------------
 
@@ -2460,14 +2490,15 @@ CREATE TABLE IF NOT EXISTS `phpbb_posts` (
   `post_delete_time` int(11) unsigned NOT NULL DEFAULT '0',
   `post_delete_reason` varchar(255) COLLATE utf8_bin NOT NULL DEFAULT '',
   `post_delete_user` int(10) unsigned NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Dumping data for table `phpbb_posts`
 --
 
 INSERT INTO `phpbb_posts` (`post_id`, `topic_id`, `forum_id`, `poster_id`, `icon_id`, `poster_ip`, `post_time`, `post_reported`, `enable_bbcode`, `enable_smilies`, `enable_magic_url`, `enable_sig`, `post_username`, `post_subject`, `post_text`, `post_checksum`, `post_attachment`, `bbcode_bitfield`, `bbcode_uid`, `post_postcount`, `post_edit_time`, `post_edit_reason`, `post_edit_user`, `post_edit_count`, `post_edit_locked`, `post_visibility`, `post_delete_time`, `post_delete_reason`, `post_delete_user`) VALUES
-(1, 1, 2, 2, 0, '::1', 1488898091, 0, 1, 1, 1, 1, '', 'Welcome to phpBB3', 'This is an example post in your phpBB3 installation. Everything seems to be working. You may delete this post if you like and continue to set up your board. During the installation process your first category and your first forum are assigned an appropriate set of permissions for the predefined usergroups administrators, bots, global moderators, guests, registered users and registered COPPA users. If you also choose to delete your first category and your first forum, do not forget to assign permissions for all these usergroups for all new categories and forums you create. It is recommended to rename your first category and your first forum and copy permissions from these while creating new categories and forums. Have fun!', '5dd683b17f641daf84c040bfefc58ce9', 0, '', '', 1, 0, '', 0, 0, 0, 1, 0, '', 0);
+(1, 1, 2, 2, 0, '::1', 1488898091, 0, 1, 1, 1, 1, '', 'Welcome to phpBB3', 'This is an example post in your phpBB3 installation. Everything seems to be working. You may delete this post if you like and continue to set up your board. During the installation process your first category and your first forum are assigned an appropriate set of permissions for the predefined usergroups administrators, bots, global moderators, guests, registered users and registered COPPA users. If you also choose to delete your first category and your first forum, do not forget to assign permissions for all these usergroups for all new categories and forums you create. It is recommended to rename your first category and your first forum and copy permissions from these while creating new categories and forums. Have fun!', '5dd683b17f641daf84c040bfefc58ce9', 0, '', '', 1, 0, '', 0, 0, 0, 1, 0, '', 0),
+(2, 2, 16, 2, 0, '::1', 1491231563, 0, 1, 1, 1, 1, '', 'test', '<r>test <E>8-)</E></r>', '2338b60a466099eb66347ec6c07e045c', 0, '', '36m03qfc', 1, 0, '', 0, 0, 0, 1, 0, '', 0);
 
 -- --------------------------------------------------------
 
@@ -2784,7 +2815,14 @@ CREATE TABLE IF NOT EXISTS `phpbb_search_wordlist` (
   `word_text` varchar(255) COLLATE utf8_bin NOT NULL DEFAULT '',
   `word_common` tinyint(1) unsigned NOT NULL DEFAULT '0',
   `word_count` mediumint(8) unsigned NOT NULL DEFAULT '0'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Dumping data for table `phpbb_search_wordlist`
+--
+
+INSERT INTO `phpbb_search_wordlist` (`word_id`, `word_text`, `word_common`, `word_count`) VALUES
+(1, 'test', 0, 2);
 
 -- --------------------------------------------------------
 
@@ -2797,6 +2835,14 @@ CREATE TABLE IF NOT EXISTS `phpbb_search_wordmatch` (
   `word_id` int(10) unsigned NOT NULL DEFAULT '0',
   `title_match` tinyint(1) unsigned NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Dumping data for table `phpbb_search_wordmatch`
+--
+
+INSERT INTO `phpbb_search_wordmatch` (`post_id`, `word_id`, `title_match`) VALUES
+(2, 1, 0),
+(2, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -2825,7 +2871,7 @@ CREATE TABLE IF NOT EXISTS `phpbb_sessions` (
 --
 
 INSERT INTO `phpbb_sessions` (`session_id`, `session_user_id`, `session_last_visit`, `session_start`, `session_time`, `session_ip`, `session_browser`, `session_forwarded_for`, `session_page`, `session_viewonline`, `session_autologin`, `session_admin`, `session_forum_id`) VALUES
-('3914ef0f1b9270c0db100166142bf041', 2, 1491226921, 1491227513, 1491230636, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36', '', 'ucp.php?action=list&g=5&i=ucp_groups&mode=manage', 1, 0, 1, 0);
+('20830e9c346525c4220c3a56b79dc1f4', 2, 1491405377, 1491405421, 1491406611, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36', '', 'index.php', 1, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -3040,14 +3086,15 @@ CREATE TABLE IF NOT EXISTS `phpbb_topics` (
   `topic_posts_approved` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `topic_posts_unapproved` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `topic_posts_softdeleted` mediumint(8) unsigned NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Dumping data for table `phpbb_topics`
 --
 
 INSERT INTO `phpbb_topics` (`topic_id`, `forum_id`, `icon_id`, `topic_attachment`, `topic_reported`, `topic_title`, `topic_poster`, `topic_time`, `topic_time_limit`, `topic_views`, `topic_status`, `topic_type`, `topic_first_post_id`, `topic_first_poster_name`, `topic_first_poster_colour`, `topic_last_post_id`, `topic_last_poster_id`, `topic_last_poster_name`, `topic_last_poster_colour`, `topic_last_post_subject`, `topic_last_post_time`, `topic_last_view_time`, `topic_moved_id`, `topic_bumped`, `topic_bumper`, `poll_title`, `poll_start`, `poll_length`, `poll_max_options`, `poll_last_vote`, `poll_vote_change`, `topic_visibility`, `topic_delete_time`, `topic_delete_reason`, `topic_delete_user`, `topic_posts_approved`, `topic_posts_unapproved`, `topic_posts_softdeleted`) VALUES
-(1, 2, 0, 0, 0, 'Welcome to phpBB3', 2, 1488898091, 0, 0, 0, 0, 1, 'ting', 'AA0000', 1, 2, 'ting', 'AA0000', 'Welcome to phpBB3', 1488898091, 972086460, 0, 0, 0, '', 0, 0, 1, 0, 0, 1, 0, '', 0, 1, 0, 0);
+(1, 2, 0, 0, 0, 'Welcome to phpBB3', 2, 1488898091, 0, 1, 0, 0, 1, 'ting', 'AA0000', 1, 2, 'ting', 'AA0000', 'Welcome to phpBB3', 1488898091, 1491404805, 0, 0, 0, '', 0, 0, 1, 0, 0, 1, 0, '', 0, 1, 0, 0),
+(2, 16, 0, 0, 0, 'test', 2, 1491231563, 0, 2, 0, 0, 2, 'ting', 'AA0000', 2, 2, 'ting', 'AA0000', 'test', 1491231563, 1491231788, 0, 0, 0, '', 0, 0, 1, 0, 0, 1, 0, '', 0, 1, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -3066,7 +3113,8 @@ CREATE TABLE IF NOT EXISTS `phpbb_topics_posted` (
 --
 
 INSERT INTO `phpbb_topics_posted` (`user_id`, `topic_id`, `topic_posted`) VALUES
-(2, 1, 1);
+(2, 1, 1),
+(2, 2, 1);
 
 -- --------------------------------------------------------
 
@@ -3080,6 +3128,13 @@ CREATE TABLE IF NOT EXISTS `phpbb_topics_track` (
   `forum_id` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `mark_time` int(11) unsigned NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Dumping data for table `phpbb_topics_track`
+--
+
+INSERT INTO `phpbb_topics_track` (`user_id`, `topic_id`, `forum_id`, `mark_time`) VALUES
+(2, 2, 16, 1491231563);
 
 -- --------------------------------------------------------
 
@@ -3173,8 +3228,8 @@ CREATE TABLE IF NOT EXISTS `phpbb_users` (
 --
 
 INSERT INTO `phpbb_users` (`user_id`, `user_type`, `group_id`, `user_permissions`, `user_perm_from`, `user_ip`, `user_regdate`, `username`, `username_clean`, `user_password`, `user_passchg`, `user_email`, `user_email_hash`, `user_birthday`, `user_lastvisit`, `user_lastmark`, `user_lastpost_time`, `user_lastpage`, `user_last_confirm_key`, `user_last_search`, `user_warnings`, `user_last_warning`, `user_login_attempts`, `user_inactive_reason`, `user_inactive_time`, `user_posts`, `user_lang`, `user_timezone`, `user_dateformat`, `user_style`, `user_rank`, `user_colour`, `user_new_privmsg`, `user_unread_privmsg`, `user_last_privmsg`, `user_message_rules`, `user_full_folder`, `user_emailtime`, `user_topic_show_days`, `user_topic_sortby_type`, `user_topic_sortby_dir`, `user_post_show_days`, `user_post_sortby_type`, `user_post_sortby_dir`, `user_notify`, `user_notify_pm`, `user_notify_type`, `user_allow_pm`, `user_allow_viewonline`, `user_allow_viewemail`, `user_allow_massemail`, `user_options`, `user_avatar`, `user_avatar_type`, `user_avatar_width`, `user_avatar_height`, `user_sig`, `user_sig_bbcode_uid`, `user_sig_bbcode_bitfield`, `user_jabber`, `user_actkey`, `user_newpasswd`, `user_form_salt`, `user_new`, `user_reminded`, `user_reminded_time`) VALUES
-(1, 2, 1, '', 0, '', 1488898091, 'Anonymous', 'anonymous', '', 0, '', 0, '', 0, 0, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 'en', '', 'd M Y H:i', 1, 0, '', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 1, 1, 1, 0, 230271, '', '', 0, 0, '', '', '', '', '', '', '2fdcf7072a016f77', 1, 0, 0),
-(2, 3, 5, 'zik0zjzik0zjzik0zg\nhwba88000000\nzik0zjzieeps\n\n\n\n\n\nzik0zjzieeps\nzik0zjzieeps\nzik0zjzieeps\nzik0zjzieeps\n\nzik0zjzieeps\nzik0zjzieeps\nzik0zjzieeps\nzik0zjzieeps', 0, '::1', 1488898091, 'ting', 'ting', '$2y$10$MQuxhAHPllIWThQ3gfF9ru.dEHdVTUDHoR330FsK40AvaP0sT5bZ2', 0, 'yassin.ting@gmail.com', 277347245621, '', 1491226921, 0, 0, 'adm/index.php?i=styles', '', 0, 0, 0, 0, 0, 0, 1, 'en', '', 'D M d, Y g:i a', 1, 1, 'AA0000', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 1, 1, 1, 1, 230271, '', '', 0, 0, '', '', '', '', '', '', 'c8e5002e319e8e79', 1, 0, 0),
+(1, 2, 1, '00000000000g13ydq8\nhwba88000000\nhwba88000000\n\n\n\n\n\nhwba88000000\nhwba88000000\nhwba88000000\nhwba88000000\n\nhwba88000000\nhwba88000000\nhwba88000000\nhwba88000000\nhwba88000000', 0, '', 1488898091, 'Anonymous', 'anonymous', '', 0, '', 0, '', 0, 0, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 'en', '', 'd M Y H:i', 1, 0, '', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 1, 1, 1, 0, 230271, '', '', 0, 0, '', '', '', '', '', '', '0f87c91fe3f36034', 1, 0, 0),
+(2, 3, 5, 'zik0zjzik0zjzik0zg\nhwba88000000\nzik0zjzieeps\n\n\n\n\n\nzik0zjzieeps\nzik0zjzieeps\nzik0zjzieeps\nzik0zjzieeps\n\nzik0zjzieeps\nzik0zjzieeps\nzik0zjzieeps\nzik0zjzieeps\nhwba88000000', 0, '::1', 1488898091, 'ting', 'ting', '$2y$10$MQuxhAHPllIWThQ3gfF9ru.dEHdVTUDHoR330FsK40AvaP0sT5bZ2', 0, 'yassin.ting@gmail.com', 277347245621, '', 1491405377, 0, 1491231563, 'viewtopic.php?f=16&t=222', '', 0, 0, 0, 0, 0, 0, 2, 'en', '', 'D M d, Y g:i a', 1, 1, 'AA0000', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 1, 1, 1, 1, 230271, '', '', 0, 0, '', '', '', '', '', '', 'f56c4e0ba9eac132', 1, 0, 0),
 (3, 2, 6, '', 0, '', 1488898097, 'AdsBot [Google]', 'adsbot [google]', '', 1488898097, '', 0, '', 0, 1488898097, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 'en', 'UTC', 'D M d, Y g:i a', 1, 0, '9E8DA7', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 0, 1, 1, 0, 230271, '', '', 0, 0, '', '', '', '', '', '', 'cd3584f2cbe91b18', 0, 0, 0),
 (4, 2, 6, '', 0, '', 1488898098, 'Alexa [Bot]', 'alexa [bot]', '', 1488898098, '', 0, '', 0, 1488898098, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 'en', 'UTC', 'D M d, Y g:i a', 1, 0, '9E8DA7', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 0, 1, 1, 0, 230271, '', '', 0, 0, '', '', '', '', '', '', 'c991ae8868100dcc', 0, 0, 0),
 (5, 2, 6, '', 0, '', 1488898099, 'Alta Vista [Bot]', 'alta vista [bot]', '', 1488898099, '', 0, '', 0, 1488898099, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 'en', 'UTC', 'D M d, Y g:i a', 1, 0, '9E8DA7', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 0, 1, 1, 0, 230271, '', '', 0, 0, '', '', '', '', '', '', '850931c83d347a2a', 0, 0, 0),
@@ -4008,7 +4063,7 @@ ALTER TABLE `phpbb_extension_groups`
 -- AUTO_INCREMENT for table `phpbb_forums`
 --
 ALTER TABLE `phpbb_forums`
-  MODIFY `forum_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
+  MODIFY `forum_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=18;
 --
 -- AUTO_INCREMENT for table `phpbb_groups`
 --
@@ -4028,7 +4083,7 @@ ALTER TABLE `phpbb_lang`
 -- AUTO_INCREMENT for table `phpbb_log`
 --
 ALTER TABLE `phpbb_log`
-  MODIFY `log_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=122;
+  MODIFY `log_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=132;
 --
 -- AUTO_INCREMENT for table `phpbb_modules`
 --
@@ -4048,7 +4103,7 @@ ALTER TABLE `phpbb_notification_types`
 -- AUTO_INCREMENT for table `phpbb_posts`
 --
 ALTER TABLE `phpbb_posts`
-  MODIFY `post_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+  MODIFY `post_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `phpbb_privmsgs`
 --
@@ -4088,7 +4143,7 @@ ALTER TABLE `phpbb_reports_reasons`
 -- AUTO_INCREMENT for table `phpbb_search_wordlist`
 --
 ALTER TABLE `phpbb_search_wordlist`
-  MODIFY `word_id` int(10) unsigned NOT NULL AUTO_INCREMENT;
+  MODIFY `word_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `phpbb_sitelist`
 --
@@ -4113,7 +4168,7 @@ ALTER TABLE `phpbb_teampage`
 -- AUTO_INCREMENT for table `phpbb_topics`
 --
 ALTER TABLE `phpbb_topics`
-  MODIFY `topic_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+  MODIFY `topic_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `phpbb_users`
 --
