@@ -169,14 +169,14 @@ a:hover	{ text-decoration: underline; }
 }
 
 .site_logo {
-	display: inline-block;
+	display: none;
 	width: 200px;
 	height: 68px;
 }
 
 /* Site description and logo */
 .site-description {
-	display: inline-block;
+	display: none;
 	text-align:center;
 	width:100%;
 }
