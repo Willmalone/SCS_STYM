@@ -37,6 +37,10 @@
 				<span>{L_BUTTON_POST_REPLY}</span> <i class="icon fa-reply fa-fw" aria-hidden="true"></i>
 			<!-- ENDIF -->
 		</a>
+		
+		<button onclick="upvote()" class="button" title="Upvote">Upvote ({TOPIC_UPVOTES})</button>
+		<button onclick="downvote()" class="button" title="Downvote">Downvote ({TOPIC_DOWNVOTES})</button>
+		
 	<!-- ENDIF -->
 
 	<!-- EVENT viewtopic_buttons_top_after -->
@@ -218,6 +222,8 @@
 						{postrow.L_IGNORE_POST}<br />
 						{postrow.L_POST_DISPLAY}
 					</div>
+					
+					
 				<!-- ENDIF -->
 			<!-- ENDIF -->
 			<div id="post_content{postrow.POST_ID}"<!-- IF postrow.S_POST_HIDDEN --> style="display: none;"<!-- ENDIF -->>
@@ -273,6 +279,9 @@
 							</a>
 						</li>
 					<!-- ENDIF -->
+					
+										
+					
 					<!-- EVENT viewtopic_body_post_buttons_after -->
 				</ul>
 			<!-- ENDIF -->

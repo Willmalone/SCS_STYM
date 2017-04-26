@@ -754,7 +754,7 @@ $template->assign_vars(array(
 	'REPORTED_IMG'		=> $user->img('icon_topic_reported', 'POST_REPORTED'),
 	'UNAPPROVED_IMG'	=> $user->img('icon_topic_unapproved', 'POST_UNAPPROVED'),
 	'WARN_IMG'			=> $user->img('icon_user_warn', 'WARN_USER'),
-
+	
 	'S_IS_LOCKED'			=> ($topic_data['topic_status'] == ITEM_UNLOCKED && $topic_data['forum_status'] == ITEM_UNLOCKED) ? false : true,
 	'S_SELECT_SORT_DIR' 	=> $s_sort_dir,
 	'S_SELECT_SORT_KEY' 	=> $s_sort_key,
@@ -797,9 +797,35 @@ $template->assign_vars(array(
 
 	'U_POST_NEW_TOPIC' 		=> ($auth->acl_get('f_post', $forum_id) || $user->data['user_id'] == ANONYMOUS) ? append_sid("{$phpbb_root_path}posting.$phpEx", "mode=post&amp;f=$forum_id") : '',
 	'U_POST_REPLY_TOPIC' 	=> ($auth->acl_get('f_reply', $forum_id) || $user->data['user_id'] == ANONYMOUS) ? append_sid("{$phpbb_root_path}posting.$phpEx", "mode=reply&amp;f=$forum_id&amp;t=$topic_id") : '',
-	'U_BUMP_TOPIC'			=> (bump_topic_allowed($forum_id, $topic_data['topic_bumped'], $topic_data['topic_last_post_time'], $topic_data['topic_poster'], $topic_data['topic_last_poster_id'])) ? append_sid("{$phpbb_root_path}posting.$phpEx", "mode=bump&amp;f=$forum_id&amp;t=$topic_id&amp;hash=" . generate_link_hash("topic_$topic_id")) : '')
-);
+	'U_BUMP_TOPIC'			=> (bump_topic_allowed($forum_id, $topic_data['topic_bumped'], $topic_data['topic_last_post_time'], $topic_data['topic_poster'], $topic_data['topic_last_poster_id'])) ? append_sid("{$phpbb_root_path}posting.$phpEx", "mode=bump&amp;f=$forum_id&amp;t=$topic_id&amp;hash=" . generate_link_hash("topic_$topic_id")) : '',
+	
+	'TOPIC_UPVOTES'			=> get_topic_upvotes($forum_id, $topic_id),
+	'TOPIC_DOWNVOTES'		=> get_topic_downvotes($forum_id, $topic_id)
+));
 
+/*Echo javascript that passes the information through the url
+  needed to check for up or down votes on topics.*/
+echo "<script>";
+echo '   function downvote(){';
+echo '        window.location="http://localhost/phpBB3b/viewtopic.php?downvote=-1&f='.$forum_id.'&p='.$topic_id. '";';
+echo " }     ";
+echo ' </script> ';
+
+echo "<script>";
+echo '  function upvote(){';
+echo '      window.location="http://localhost/phpBB3b/viewtopic.php?upvote=1&f='.$forum_id.'&p='.$topic_id. '";';
+echo "}";
+echo '</script>';
+
+/*Check the data sent through the url from clicking our up and downvote buttons*/
+if(isset($_GET['downvote']) && $user->is_setup()){
+	add_vote_to_db($forum_id, $topic_id, -1);
+	echo '<script>window.location="http://localhost/phpBB3b/viewtopic.php?f='.$forum_id.'&p='.$topic_id.'";</script>';
+}elseif(isset($_GET['upvote']) && $user->is_setup()){
+	add_vote_to_db($forum_id, $topic_id, 1);
+
+	echo '<script>window.location="http://localhost/phpBB3b/viewtopic.php?f='.$forum_id.'&p='.$topic_id.'";</script>';
+}
 // Does this topic contain a poll?
 if (!empty($topic_data['poll_start']))
 {
@@ -1226,6 +1252,8 @@ $now = phpbb_gmgetdate($now->getTimestamp() + $now->getOffset());
 
 // Posts are stored in the $rowset array while $attach_list, $user_cache
 // and the global bbcode_bitfield are built
+
+
 while ($row = $db->sql_fetchrow($result))
 {
 	// Set max_post_time
@@ -1267,6 +1295,8 @@ while ($row = $db->sql_fetchrow($result))
 		'post_edit_reason'	=> $row['post_edit_reason'],
 		'post_edit_user'	=> $row['post_edit_user'],
 		'post_edit_locked'	=> $row['post_edit_locked'],
+		
+			
 		'post_delete_time'	=> $row['post_delete_time'],
 		'post_delete_reason'=> $row['post_delete_reason'],
 		'post_delete_user'	=> $row['post_delete_user'],
@@ -2040,10 +2070,12 @@ for ($i = 0, $end = sizeof($post_list); $i < $end; ++$i)
 	{
 		$post_row = array_merge($post_row, $cp_row['row']);
 	}
-
+	
+	
 	// Dump vars into template
 	$template->assign_block_vars('postrow', $post_row);
-
+	
+	
 	$contact_fields = array(
 		array(
 			'ID'		=> 'pm',

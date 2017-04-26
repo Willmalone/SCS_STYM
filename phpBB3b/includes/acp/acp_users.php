@@ -1594,7 +1594,8 @@ class acp_users
 					'post_sk'			=> $request->variable('post_sk', ($user_row['user_post_sortby_type']) ? $user_row['user_post_sortby_type'] : 't'),
 					'post_sd'			=> $request->variable('post_sd', ($user_row['user_post_sortby_dir']) ? $user_row['user_post_sortby_dir'] : 'a'),
 					'post_st'			=> $request->variable('post_st', ($user_row['user_post_show_days']) ? $user_row['user_post_show_days'] : 0),
-
+					
+					
 					'view_images'		=> $request->variable('view_images', $this->optionget($user_row, 'viewimg')),
 					'view_flash'		=> $request->variable('view_flash', $this->optionget($user_row, 'viewflash')),
 					'view_smilies'		=> $request->variable('view_smilies', $this->optionget($user_row, 'viewsmilies')),
@@ -1630,6 +1631,8 @@ class acp_users
 						'topic_sd'		=> array('string', false, 1, 1),
 						'post_sk'		=> array('string', false, 1, 1),
 						'post_sd'		=> array('string', false, 1, 1),
+						
+												
 					));
 
 					if (!check_form_key($form_name))
@@ -1668,7 +1671,8 @@ class acp_users
 							'user_post_sortby_type'		=> $data['post_sk'],
 							'user_topic_sortby_dir'		=> $data['topic_sd'],
 							'user_post_sortby_dir'		=> $data['post_sd'],
-
+							
+							
 							'user_topic_show_days'	=> $data['topic_st'],
 							'user_post_show_days'	=> $data['post_st'],
 
@@ -1807,7 +1811,7 @@ class acp_users
 					'VIEW_SIGS'			=> $data['view_sigs'],
 					'VIEW_AVATARS'		=> $data['view_avatars'],
 					'VIEW_WORDCENSOR'	=> $data['view_wordcensor'],
-
+					
 					'S_TOPIC_SORT_DAYS'		=> $s_limit_topic_days,
 					'S_TOPIC_SORT_KEY'		=> $s_sort_topic_key,
 					'S_TOPIC_SORT_DIR'		=> $s_sort_topic_dir,

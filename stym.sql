@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 12, 2017 at 10:41 PM
+-- Generation Time: Apr 26, 2017 at 01:03 PM
 -- Server version: 5.6.26
 -- PHP Version: 5.6.12
 
@@ -968,7 +968,7 @@ INSERT INTO `phpbb_config` (`config_name`, `config_value`, `is_dynamic`) VALUES
 ('allow_topic_notify', '1', 0),
 ('allow_viglink_phpbb', '1', 0),
 ('allowed_schemes_links', 'http,https,ftp', 0),
-('assets_version', '19', 0),
+('assets_version', '39', 0),
 ('attachment_quota', '52428800', 0),
 ('auth_bbcode_pm', '1', 0),
 ('auth_flash_pm', '0', 0),
@@ -1006,7 +1006,7 @@ INSERT INTO `phpbb_config` (`config_name`, `config_value`, `is_dynamic`) VALUES
 ('bump_interval', '10', 0),
 ('bump_type', 'd', 0),
 ('cache_gc', '7200', 0),
-('cache_last_gc', '1492023904', 1),
+('cache_last_gc', '1493200938', 1),
 ('captcha_gd', '1', 0),
 ('captcha_gd_3d_noise', '1', 0),
 ('captcha_gd_fonts', '1', 0),
@@ -1029,11 +1029,11 @@ INSERT INTO `phpbb_config` (`config_name`, `config_value`, `is_dynamic`) VALUES
 ('coppa_mail', '', 0),
 ('cron_lock', '0', 1),
 ('database_gc', '604800', 0),
-('database_last_gc', '1492023908', 1),
+('database_last_gc', '1493200931', 1),
 ('dbms_version', '5.6.26', 0),
 ('default_dateformat', 'D M d, Y g:i a', 0),
 ('default_lang', 'en', 0),
-('default_style', '13', 0),
+('default_style', '21', 0),
 ('delete_time', '0', 0),
 ('display_last_edited', '1', 0),
 ('display_last_subject', '1', 0),
@@ -1172,12 +1172,12 @@ INSERT INTO `phpbb_config` (`config_name`, `config_value`, `is_dynamic`) VALUES
 ('new_member_group_default', '0', 0),
 ('new_member_post_limit', '3', 0),
 ('newest_user_colour', '', 1),
-('newest_user_id', '48', 1),
-('newest_username', 'william', 1),
+('newest_user_id', '49', 1),
+('newest_username', 'james', 1),
 ('num_files', '0', 1),
-('num_posts', '3', 1),
-('num_topics', '3', 1),
-('num_users', '2', 1),
+('num_posts', '5', 1),
+('num_topics', '4', 1),
+('num_users', '3', 1),
 ('override_user_style', '1', 0),
 ('pass_complex', 'PASS_TYPE_ANY', 0),
 ('phpbb_viglink_api_key', 'e4fd14f5d7f2bb6d80b8f8da1354718c', 0),
@@ -1191,12 +1191,12 @@ INSERT INTO `phpbb_config` (`config_name`, `config_value`, `is_dynamic`) VALUES
 ('print_pm', '1', 0),
 ('questionnaire_unique_id', '84452499597687ca', 0),
 ('queue_interval', '60', 0),
-('rand_seed', '8d0e384ed05cb0cd60f358f4d331aa95', 1),
-('rand_seed_last_update', '1490179231', 1),
+('rand_seed', '05269193101d880c04c6f241242320e6', 1),
+('rand_seed_last_update', '1493202787', 1),
 ('ranks_path', 'images/ranks', 0),
 ('read_notification_expire_days', '30', 0),
 ('read_notification_gc', '86400', 0),
-('read_notification_last_gc', '1491988727', 1),
+('read_notification_last_gc', '1493200972', 1),
 ('record_online_date', '1491394478', 1),
 ('record_online_users', '2', 1),
 ('referer_validation', '0', 0),
@@ -1208,7 +1208,7 @@ INSERT INTO `phpbb_config` (`config_name`, `config_value`, `is_dynamic`) VALUES
 ('search_gc', '7200', 0),
 ('search_indexing_state', '', 1),
 ('search_interval', '0', 0),
-('search_last_gc', '1492023897', 1),
+('search_last_gc', '1493200327', 1),
 ('search_store_results', '1800', 0),
 ('search_type', '\\phpbb\\search\\fulltext_native', 0),
 ('secure_allow_deny', '1', 0),
@@ -1218,11 +1218,11 @@ INSERT INTO `phpbb_config` (`config_name`, `config_value`, `is_dynamic`) VALUES
 ('server_port', '80', 0),
 ('server_protocol', 'http://', 0),
 ('session_gc', '3600', 0),
-('session_last_gc', '1492027508', 1),
+('session_last_gc', '1493203940', 1),
 ('session_length', '3600', 0),
-('site_desc', 'Things get solved if you get involved !', 0),
+('site_desc', 'Problems get solved if you get involved !', 0),
 ('site_home_text', '', 0),
-('site_home_url', 'http://localhost/phpbb3b/index.php?sid=884673585e505d8b60db90751cd75614', 0),
+('site_home_url', '', 0),
 ('sitename', 'Student Community Hub', 0),
 ('smilies_path', 'images/smilies', 0),
 ('smilies_per_page', '50', 0),
@@ -1265,10 +1265,10 @@ INSERT INTO `phpbb_config` (`config_name`, `config_value`, `is_dynamic`) VALUES
 ('viglink_ask_admin', '1490185214', 0),
 ('viglink_convert_account_url', 'https://www.viglink.com/users/convertAccount?key=e4fd14f5d7f2bb6d80b8f8da1354718c&amp;subId=aa4a73eb1137ef4680c20934928a2c62&amp;expiration=1521721404&amp;signature=92157dc75391cf9c6ef9092e09e447db', 0),
 ('viglink_enabled', '1', 0),
-('viglink_last_gc', '1492029025', 1),
+('viglink_last_gc', '1493201895', 1),
 ('warnings_expire_days', '90', 0),
 ('warnings_gc', '14400', 0),
-('warnings_last_gc', '1492023906', 1);
+('warnings_last_gc', '1493200963', 1);
 
 -- --------------------------------------------------------
 
@@ -1523,14 +1523,14 @@ CREATE TABLE IF NOT EXISTS `phpbb_forums` (
 
 INSERT INTO `phpbb_forums` (`forum_id`, `parent_id`, `left_id`, `right_id`, `forum_parents`, `forum_name`, `forum_desc`, `forum_desc_bitfield`, `forum_desc_options`, `forum_desc_uid`, `forum_link`, `forum_password`, `forum_style`, `forum_image`, `forum_rules`, `forum_rules_link`, `forum_rules_bitfield`, `forum_rules_options`, `forum_rules_uid`, `forum_topics_per_page`, `forum_type`, `forum_status`, `forum_last_post_id`, `forum_last_poster_id`, `forum_last_post_subject`, `forum_last_post_time`, `forum_last_poster_name`, `forum_last_poster_colour`, `forum_flags`, `display_on_index`, `enable_indexing`, `enable_icons`, `enable_prune`, `prune_next`, `prune_days`, `prune_viewed`, `prune_freq`, `display_subforum_list`, `forum_options`, `forum_posts_approved`, `forum_posts_unapproved`, `forum_posts_softdeleted`, `forum_topics_approved`, `forum_topics_unapproved`, `forum_topics_softdeleted`, `enable_shadow_prune`, `prune_shadow_days`, `prune_shadow_freq`, `prune_shadow_next`) VALUES
 (1, 0, 1, 4, '', 'General', '', '', 7, '', '', '', 0, '', '', '', '', 7, '', 0, 0, 0, 1, 2, '', 1488898091, 'ting', 'AA0000', 32, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0),
-(2, 1, 2, 3, 'a:1:{i:1;a:2:{i:0;s:7:"General";i:1;i:0;}}', 'Welcome To Student Community Hub', '<t>Description of your first forum.</t>', '', 7, '', '', '', 0, '', '', '', '', 7, '', 0, 1, 0, 1, 2, 'Welcome to phpBB3', 1488898091, 'ting', 'AA0000', 48, 1, 1, 1, 0, 0, 0, 0, 0, 1, 2, 1, 0, 0, 1, 0, 0, 0, 7, 1, 0),
+(2, 1, 2, 3, 'a:1:{i:1;a:2:{i:0;s:7:"General";i:1;i:0;}}', 'Welcome To Student Community Hub', '<t>General</t>', '', 7, '', '', '', 0, '', '', '', '', 7, '', 0, 1, 0, 4, 2, 'Forum Rules &amp; Regulations', 1492083925, 'ting', 'AA0000', 48, 1, 1, 1, 0, 0, 0, 0, 0, 1, 2, 1, 0, 0, 1, 0, 0, 0, 7, 1, 0),
 (8, 0, 5, 8, '', 'Year 1', '', '', 7, '', '', '', 0, '', '', '', '', 7, '', 0, 1, 0, 0, 0, '', 0, '', '', 48, 0, 1, 0, 0, 0, 7, 7, 1, 1, 2, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0),
 (9, 0, 9, 12, '', 'Year 2', '', '', 7, '', '', '', 0, '', '', '', '', 7, '', 0, 1, 0, 0, 0, '', 0, '', '', 48, 0, 1, 0, 0, 0, 7, 7, 1, 1, 2, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0),
 (10, 0, 13, 16, '', 'Year 3', '', '', 7, '', '', '', 0, '', '', '', '', 7, '', 0, 1, 0, 3, 2, 'RSS Feed Testing', 1491992500, 'ting', 'AA0000', 48, 0, 1, 0, 0, 0, 7, 7, 1, 1, 2, 1, 0, 0, 1, 0, 0, 0, 7, 1, 0),
-(11, 0, 17, 20, '', 'Year 4', '', '', 7, '', '', '', 0, '', '', '', '', 7, '', 0, 1, 0, 0, 0, '', 0, '', '', 48, 0, 1, 0, 0, 0, 7, 7, 1, 1, 2, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0),
+(11, 0, 17, 20, '', 'Year 4', '', '', 7, '', '', '', 0, '', '', '', '', 7, '', 0, 1, 0, 5, 2, 'Test Vote', 1493201117, 'ting', 'AA0000', 48, 0, 1, 0, 0, 0, 7, 7, 1, 1, 2, 1, 0, 0, 1, 0, 0, 0, 7, 1, 0),
 (13, 9, 10, 11, '', 'Welcome', '', '', 7, '', '', '', 0, '', '', '', '', 7, '', 0, 1, 0, 0, 0, '', 0, '', '', 48, 0, 1, 0, 0, 0, 7, 7, 1, 1, 2, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0),
 (14, 10, 14, 15, 'a:1:{i:10;a:2:{i:0;s:6:"Year 3";i:1;i:1;}}', 'Welcome', '', '', 7, '', '', '', 0, '', '', '', '', 7, '', 0, 1, 0, 0, 0, '', 0, '', '', 48, 0, 1, 0, 0, 0, 7, 7, 1, 1, 2, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0),
-(15, 11, 18, 19, '', 'Welcome', '', '', 7, '', '', '', 0, '', '', '', '', 7, '', 0, 1, 0, 0, 0, '', 0, '', '', 48, 0, 1, 0, 0, 0, 7, 7, 1, 1, 2, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0),
+(15, 11, 18, 19, 'a:1:{i:11;a:2:{i:0;s:6:"Year 4";i:1;i:1;}}', 'Welcome', '', '', 7, '', '', '', 0, '', '', '', '', 7, '', 0, 1, 0, 0, 0, '', 0, '', '', 48, 0, 1, 0, 0, 0, 7, 7, 1, 1, 2, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0),
 (16, 8, 6, 7, 'a:1:{i:8;a:2:{i:0;s:6:"Year 1";i:1;i:1;}}', 'Welcome', '<t>This is a Year 1 Section</t>', '', 7, '', '', '', 0, '', '', '', '', 7, '', 0, 1, 0, 2, 2, 'test', 1491231563, 'ting', 'AA0000', 48, 0, 1, 0, 0, 0, 7, 7, 1, 1, 2, 1, 0, 0, 1, 0, 0, 0, 7, 1, 0),
 (17, 0, 21, 22, '', 'Student Community Chat', '<r><IRC><s>[IRC]</s><e>[/IRC]</e></IRC></r>', '', 7, '', '', '', 0, '', '', '', '', 7, '', 0, 2, 0, 0, 0, '', 0, '', '', 32, 0, 1, 0, 0, 0, 7, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0);
 
@@ -1563,8 +1563,9 @@ CREATE TABLE IF NOT EXISTS `phpbb_forums_track` (
 --
 
 INSERT INTO `phpbb_forums_track` (`user_id`, `forum_id`, `mark_time`) VALUES
-(2, 2, 1491404805),
+(2, 2, 1492083926),
 (2, 10, 1491992500),
+(2, 11, 1493201117),
 (2, 16, 1491231563);
 
 -- --------------------------------------------------------
@@ -1694,7 +1695,7 @@ CREATE TABLE IF NOT EXISTS `phpbb_log` (
   `log_time` int(11) unsigned NOT NULL DEFAULT '0',
   `log_operation` text COLLATE utf8_bin NOT NULL,
   `log_data` mediumtext COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=174 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=216 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Dumping data for table `phpbb_log`
@@ -1873,7 +1874,49 @@ INSERT INTO `phpbb_log` (`log_id`, `log_type`, `user_id`, `forum_id`, `topic_id`
 (170, 0, 2, 0, 0, 0, 0, '::1', 1492027041, 'LOG_PURGE_CACHE', ''),
 (171, 0, 2, 0, 0, 0, 0, '::1', 1492027593, 'LOG_ADMIN_AUTH_SUCCESS', ''),
 (172, 2, 2, 0, 0, 0, 0, '::1', 1492027604, 'LOG_VIGLINK_CHECK_FAIL', 'a:1:{i:0;s:144:"The operation could not be completed because the <var>fsockopen</var> function has been disabled or the server being queried could not be found.";}'),
-(173, 0, 2, 0, 0, 0, 0, '::1', 1492029157, 'LOG_CONFIG_SETTINGS', '');
+(173, 0, 2, 0, 0, 0, 0, '::1', 1492029157, 'LOG_CONFIG_SETTINGS', ''),
+(174, 1, 2, 2, 1, 0, 0, '::1', 1492084059, 'LOG_DELETE_TOPIC', 'a:3:{i:0;s:17:"Welcome to phpBB3";i:1;s:4:"ting";i:2;s:0:"";}'),
+(175, 0, 2, 0, 0, 0, 0, '::1', 1492084090, 'LOG_ADMIN_AUTH_SUCCESS', ''),
+(176, 0, 2, 0, 0, 0, 0, '::1', 1492084102, 'LOG_PURGE_CACHE', ''),
+(177, 0, 2, 0, 0, 0, 0, '::1', 1492084174, 'LOG_FORUM_EDIT', 'a:1:{i:0;s:32:"Welcome To Student Community Hub";}'),
+(178, 0, 2, 0, 0, 0, 0, '::1', 1492084330, 'LOG_STYLE_DELETE', 'a:1:{i:0;s:51:"Black-Silver-Split, Black-Silver-Slim, Black-Silver";}'),
+(179, 0, 2, 0, 0, 0, 0, '::1', 1492084572, 'LOG_PURGE_CACHE', ''),
+(180, 0, 2, 0, 0, 0, 0, '::1', 1492084590, 'LOG_STYLE_DELETE', 'a:1:{i:0;s:10:"Flat Style";}'),
+(181, 0, 2, 0, 0, 0, 0, '::1', 1492084684, 'LOG_STYLE_ADD', 'a:1:{i:0;s:10:"Flat Style";}'),
+(182, 0, 2, 0, 0, 0, 0, '::1', 1492084721, 'LOG_CONFIG_SETTINGS', ''),
+(183, 0, 2, 0, 0, 0, 0, '::1', 1492084832, 'LOG_PURGE_CACHE', ''),
+(184, 0, 2, 0, 0, 0, 0, '::1', 1492085139, 'LOG_PURGE_CACHE', ''),
+(185, 0, 2, 0, 0, 0, 0, '::1', 1492085267, 'LOG_CONFIG_SETTINGS', ''),
+(186, 0, 2, 0, 0, 0, 0, '::1', 1492085308, 'LOG_PURGE_CACHE', ''),
+(187, 0, 2, 0, 0, 0, 0, '::1', 1492085319, 'LOG_PURGE_SESSIONS', ''),
+(188, 0, 2, 0, 0, 0, 0, '::1', 1492085449, 'LOG_PURGE_CACHE', ''),
+(189, 0, 2, 0, 0, 0, 0, '::1', 1492085572, 'LOG_PURGE_CACHE', ''),
+(190, 0, 2, 0, 0, 0, 0, '::1', 1492085746, 'LOG_STYLE_EDIT_DETAILS', 'a:1:{i:0;s:10:"Absolution";}'),
+(191, 0, 2, 0, 0, 0, 0, '::1', 1492085975, 'LOG_PURGE_CACHE', ''),
+(192, 0, 2, 0, 0, 0, 0, '::1', 1492086252, 'LOG_PURGE_CACHE', ''),
+(193, 0, 2, 0, 0, 0, 0, '::1', 1492086313, 'LOG_PURGE_CACHE', ''),
+(194, 0, 2, 0, 0, 0, 0, '::1', 1492086464, 'LOG_STYLE_EDIT_DETAILS', 'a:1:{i:0;s:10:"Absolution";}'),
+(195, 0, 2, 0, 0, 0, 0, '::1', 1492086502, 'LOG_PURGE_CACHE', ''),
+(196, 0, 2, 0, 0, 0, 0, '::1', 1492087080, 'LOG_STYLE_ADD', 'a:1:{i:0;s:6:"PBTech";}'),
+(197, 0, 2, 0, 0, 0, 0, '::1', 1492087277, 'LOG_STYLE_ADD', 'a:1:{i:0;s:3:"PS4";}'),
+(198, 0, 2, 0, 0, 0, 0, '::1', 1492087502, 'LOG_STYLE_ADD', 'a:1:{i:0;s:21:"AllanStyle-ShadowGlow";}'),
+(199, 0, 2, 0, 0, 0, 0, '::1', 1492087775, 'LOG_STYLE_ADD', 'a:1:{i:0;s:14:"SE Square Left";}'),
+(200, 0, 2, 0, 0, 0, 0, '::1', 1492089992, 'LOG_PURGE_CACHE', ''),
+(201, 0, 2, 0, 0, 0, 0, '::1', 1492592073, 'LOG_ADMIN_AUTH_SUCCESS', ''),
+(202, 0, 2, 0, 0, 0, 0, '::1', 1492592100, 'LOG_CONFIG_SETTINGS', ''),
+(203, 0, 2, 0, 0, 0, 0, '::1', 1492596590, 'LOG_PURGE_CACHE', ''),
+(204, 0, 2, 0, 0, 0, 0, '::1', 1492597098, 'LOG_PURGE_CACHE', ''),
+(205, 0, 2, 0, 0, 0, 0, '::1', 1492597182, 'LOG_PURGE_CACHE', ''),
+(206, 0, 2, 0, 0, 0, 0, '::1', 1492598581, 'LOG_PURGE_CACHE', ''),
+(207, 0, 2, 0, 0, 0, 0, '::1', 1493200942, 'LOG_ADMIN_AUTH_SUCCESS', ''),
+(208, 0, 2, 0, 0, 0, 0, '::1', 1493200952, 'LOG_PURGE_CACHE', ''),
+(209, 0, 2, 0, 0, 0, 0, '::1', 1493201050, 'LOG_PURGE_CACHE', ''),
+(210, 0, 2, 0, 0, 0, 0, '::1', 1493201061, 'LOG_PURGE_SESSIONS', ''),
+(211, 0, 2, 0, 0, 0, 0, '::1', 1493201340, 'LOG_PURGE_CACHE', ''),
+(212, 0, 2, 0, 0, 0, 0, '::1', 1493201547, 'LOG_PURGE_CACHE', ''),
+(213, 0, 2, 0, 0, 0, 0, '::1', 1493202189, 'LOG_ADMIN_AUTH_SUCCESS', ''),
+(214, 0, 2, 0, 0, 0, 0, '::1', 1493202708, 'LOG_PROFILE_FIELD_EDIT', 'a:1:{i:0;s:24:"year_study:Year of Study";}'),
+(215, 0, 2, 0, 0, 0, 0, '::1', 1493204435, 'LOG_ADMIN_AUTH_SUCCESS', '');
 
 -- --------------------------------------------------------
 
@@ -2533,16 +2576,17 @@ CREATE TABLE IF NOT EXISTS `phpbb_posts` (
   `post_delete_time` int(11) unsigned NOT NULL DEFAULT '0',
   `post_delete_reason` varchar(255) COLLATE utf8_bin NOT NULL DEFAULT '',
   `post_delete_user` int(10) unsigned NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Dumping data for table `phpbb_posts`
 --
 
 INSERT INTO `phpbb_posts` (`post_id`, `topic_id`, `forum_id`, `poster_id`, `icon_id`, `poster_ip`, `post_time`, `post_reported`, `enable_bbcode`, `enable_smilies`, `enable_magic_url`, `enable_sig`, `post_username`, `post_subject`, `post_text`, `post_checksum`, `post_attachment`, `bbcode_bitfield`, `bbcode_uid`, `post_postcount`, `post_edit_time`, `post_edit_reason`, `post_edit_user`, `post_edit_count`, `post_edit_locked`, `post_visibility`, `post_delete_time`, `post_delete_reason`, `post_delete_user`) VALUES
-(1, 1, 2, 2, 0, '::1', 1488898091, 0, 1, 1, 1, 1, '', 'Welcome to phpBB3', 'This is an example post in your phpBB3 installation. Everything seems to be working. You may delete this post if you like and continue to set up your board. During the installation process your first category and your first forum are assigned an appropriate set of permissions for the predefined usergroups administrators, bots, global moderators, guests, registered users and registered COPPA users. If you also choose to delete your first category and your first forum, do not forget to assign permissions for all these usergroups for all new categories and forums you create. It is recommended to rename your first category and your first forum and copy permissions from these while creating new categories and forums. Have fun!', '5dd683b17f641daf84c040bfefc58ce9', 0, '', '', 1, 0, '', 0, 0, 0, 1, 0, '', 0),
 (2, 2, 16, 2, 0, '::1', 1491231563, 0, 1, 1, 1, 1, '', 'test', '<r>test <E>8-)</E></r>', '2338b60a466099eb66347ec6c07e045c', 0, '', '36m03qfc', 1, 0, '', 0, 0, 0, 1, 0, '', 0),
-(3, 3, 10, 2, 0, '::1', 1491992500, 0, 1, 1, 1, 1, '', 'RSS Feed Testing', '<t>This is RSS Feed tetsing ! 1 2 3</t>', '86f73d2a5271b5e547096af1839671ea', 0, '', 'csyqskdm', 1, 0, '', 0, 0, 0, 1, 0, '', 0);
+(3, 3, 10, 2, 0, '::1', 1491992500, 0, 1, 1, 1, 1, '', 'RSS Feed Testing', '<t>This is RSS Feed tetsing ! 1 2 3</t>', '86f73d2a5271b5e547096af1839671ea', 0, '', 'csyqskdm', 1, 0, '', 0, 0, 0, 1, 0, '', 0),
+(4, 4, 2, 2, 1, '::1', 1492083925, 0, 1, 1, 1, 1, '', 'Forum Rules &amp; Regulations', '<r><B><s>[b]</s><SIZE size="150"><s>[size=150]</s>Forum Rules<e>[/size]</e></SIZE><e>[/b]</e></B><br/>\n<br/>\n<B><s>[b]</s>1. No Spam / Advertising / Self-promote in the forums<e>[/b]</e></B><br/>\nThese forums define spam as unsolicited advertisement for goods, services and/or other web sites, or posts with little, or completely unrelated content. Do not spam the forums with links to your site or product, or try to self-promote your website, business or forums etc.<br/>\nSpamming also includes sending private messages to a large number of different users.<br/>\n<br/>\n<B><s>[b]</s>DO NOT ASK for email addresses or phone numbers<e>[/b]</e></B><br/>\n<br/>\n<B><s>[b]</s>2. Do not post copyright-infringing material<e>[/b]</e></B><br/>\nProviding or asking for information on how to illegally obtain copyrighted materials is forbidden.<br/>\n<br/>\n<B><s>[b]</s>3. Do not post “offensive” posts, links or images<e>[/b]</e></B><br/>\nAny material which constitutes defamation, harassment, or abuse is strictly prohibited. Material that is sexually or otherwise obscene, racist, or otherwise overly discriminatory is not permitted on these forums. This includes user pictures. Use common sense while posting.<br/>\nThis is a web site for accountancy professionals.<br/>\n<br/>\n<B><s>[b]</s>4. Do not cross post questions<e>[/b]</e></B><br/>\nPlease refrain from posting the same question in several forums. There is normally one forum which is most suitable in which to post your question.<br/>\n<br/>\n<B><s>[b]</s>5. Do not PM users asking for help<e>[/b]</e></B><br/>\nDo not send private messages to any users asking for help. If you need help, make a new thread in the appropriate forum then the whole community can help and benefit.<br/>\n<br/>\n<B><s>[b]</s>6. Remain respectful of other members at all times<e>[/b]</e></B><br/>\nAll posts should be professional and courteous. You have every right to disagree with your fellow community members and explain your perspective.<br/>\n<br/>\nHowever, you are not free to attack, degrade, insult, or otherwise belittle them or the quality of this community. It does not matter what title or power you hold in these forums, you are expected to obey this rule.</r>', '023dd2a8e19500b8d0de4918c5081b97', 0, '', 'gwb628nn', 1, 0, '', 0, 0, 0, 1, 0, '', 0),
+(5, 5, 11, 2, 0, '::1', 1493201117, 0, 1, 1, 1, 1, '', 'Test Vote', '<t>Testing</t>', 'fa6a5a3224d7da66d9e0bdec25f62cf0', 0, '', '2wy5iwxc', 1, 0, '', 0, 0, 0, 1, 0, '', 0);
 
 -- --------------------------------------------------------
 
@@ -2675,7 +2719,7 @@ INSERT INTO `phpbb_profile_fields` (`field_id`, `field_name`, `field_type`, `fie
 (10, 'phpbb_skype', 'profilefields.type.string', 'phpbb_skype', '20', '6', '32', '', '', '[a-zA-Z][\\w\\.,\\-_]+', 0, 0, 0, 0, 1, 10, 1, 1, 0, 1, 1, 1, 'VIEW_SKYPE_PROFILE', 'skype:%s?userinfo'),
 (11, 'phpbb_youtube', 'profilefields.type.string', 'phpbb_youtube', '20', '3', '60', '', '', '[a-zA-Z][\\w\\.,\\-_]+', 0, 0, 0, 0, 1, 11, 1, 1, 0, 1, 1, 1, 'VIEW_YOUTUBE_CHANNEL', 'http://youtube.com/user/%s'),
 (12, 'phpbb_googleplus', 'profilefields.type.googleplus', 'phpbb_googleplus', '20', '3', '255', '', '', '[\\w]+', 0, 0, 0, 0, 1, 12, 1, 1, 0, 1, 1, 1, 'VIEW_GOOGLEPLUS_PROFILE', 'http://plus.google.com/%s'),
-(14, 'year_study', 'profilefields.type.dropdown', 'year_study', '0', '0', '4', '1', '1', '', 1, 1, 0, 0, 1, 14, 1, 1, 0, 0, 1, 0, '', ''),
+(14, 'year_study', 'profilefields.type.dropdown', 'year_study', '0', '0', '5', '1', '1', '', 1, 1, 0, 0, 1, 14, 1, 1, 0, 0, 1, 0, '', ''),
 (15, 'student_id', 'profilefields.type.string', 'student_id', '10', '0', '20', '', '', '[0-9]+', 1, 1, 0, 0, 1, 13, 1, 1, 0, 1, 1, 0, '', '');
 
 -- --------------------------------------------------------
@@ -2707,7 +2751,8 @@ CREATE TABLE IF NOT EXISTS `phpbb_profile_fields_data` (
 --
 
 INSERT INTO `phpbb_profile_fields_data` (`user_id`, `pf_phpbb_interests`, `pf_phpbb_occupation`, `pf_phpbb_location`, `pf_phpbb_youtube`, `pf_phpbb_facebook`, `pf_phpbb_icq`, `pf_phpbb_skype`, `pf_phpbb_twitter`, `pf_phpbb_googleplus`, `pf_phpbb_website`, `pf_phpbb_yahoo`, `pf_phpbb_aol`, `pf_year_study`, `pf_student_id`) VALUES
-(48, '', '', '', '', '', '', '', '', '', '', '', '', 3, '2014300');
+(48, '', '', '', '', '', '', '', '', '', '', '', '', 3, '2014300'),
+(49, '', '', '', '', '', '', '', '', '', '', '', '', 2, '2011111');
 
 -- --------------------------------------------------------
 
@@ -2728,10 +2773,11 @@ CREATE TABLE IF NOT EXISTS `phpbb_profile_fields_lang` (
 --
 
 INSERT INTO `phpbb_profile_fields_lang` (`field_id`, `lang_id`, `option_id`, `field_type`, `lang_value`) VALUES
-(14, 1, 0, 'profilefields.type.dropdown', '1'),
-(14, 1, 1, 'profilefields.type.dropdown', '2'),
-(14, 1, 2, 'profilefields.type.dropdown', '3'),
-(14, 1, 3, 'profilefields.type.dropdown', '4');
+(14, 1, 0, 'profilefields.type.dropdown', 'Select '),
+(14, 1, 1, 'profilefields.type.dropdown', '1'),
+(14, 1, 2, 'profilefields.type.dropdown', '2'),
+(14, 1, 3, 'profilefields.type.dropdown', '3'),
+(14, 1, 4, 'profilefields.type.dropdown', '4');
 
 -- --------------------------------------------------------
 
@@ -2859,19 +2905,171 @@ CREATE TABLE IF NOT EXISTS `phpbb_search_wordlist` (
   `word_text` varchar(255) COLLATE utf8_bin NOT NULL DEFAULT '',
   `word_common` tinyint(1) unsigned NOT NULL DEFAULT '0',
   `word_count` mediumint(8) unsigned NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=159 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Dumping data for table `phpbb_search_wordlist`
 --
 
 INSERT INTO `phpbb_search_wordlist` (`word_id`, `word_text`, `word_common`, `word_count`) VALUES
-(1, 'test', 0, 2),
-(2, 'this', 0, 1),
+(1, 'test', 0, 3),
+(2, 'this', 0, 2),
 (3, 'rss', 0, 2),
 (4, 'feed', 0, 2),
 (5, 'tetsing', 0, 1),
-(6, 'testing', 0, 1);
+(6, 'testing', 0, 2),
+(7, 'spam', 0, 1),
+(8, 'advertising', 0, 1),
+(9, 'self', 0, 1),
+(10, 'promote', 0, 1),
+(11, 'the', 0, 1),
+(12, 'forums', 0, 1),
+(13, 'these', 0, 1),
+(14, 'define', 0, 1),
+(15, 'unsolicited', 0, 1),
+(16, 'advertisement', 0, 1),
+(17, 'for', 0, 1),
+(18, 'goods', 0, 1),
+(19, 'services', 0, 1),
+(20, 'and', 0, 1),
+(21, 'other', 0, 1),
+(22, 'web', 0, 1),
+(23, 'sites', 0, 1),
+(24, 'posts', 0, 1),
+(25, 'with', 0, 1),
+(26, 'little', 0, 1),
+(27, 'completely', 0, 1),
+(28, 'unrelated', 0, 1),
+(29, 'content', 0, 1),
+(30, 'not', 0, 1),
+(31, 'links', 0, 1),
+(32, 'your', 0, 1),
+(33, 'site', 0, 1),
+(34, 'product', 0, 1),
+(35, 'try', 0, 1),
+(36, 'website', 0, 1),
+(37, 'business', 0, 1),
+(38, 'etc', 0, 1),
+(39, 'spamming', 0, 1),
+(40, 'also', 0, 1),
+(41, 'includes', 0, 1),
+(42, 'sending', 0, 1),
+(43, 'private', 0, 1),
+(44, 'messages', 0, 1),
+(45, 'large', 0, 1),
+(46, 'number', 0, 1),
+(47, 'different', 0, 1),
+(48, 'users', 0, 1),
+(49, 'ask', 0, 1),
+(50, 'email', 0, 1),
+(51, 'addresses', 0, 1),
+(52, 'phone', 0, 1),
+(53, 'numbers', 0, 1),
+(54, 'post', 0, 1),
+(55, 'copyright', 0, 1),
+(56, 'infringing', 0, 1),
+(57, 'material', 0, 1),
+(58, 'providing', 0, 1),
+(59, 'asking', 0, 1),
+(60, 'information', 0, 1),
+(61, 'how', 0, 1),
+(62, 'illegally', 0, 1),
+(63, 'obtain', 0, 1),
+(64, 'copyrighted', 0, 1),
+(65, 'materials', 0, 1),
+(66, 'forbidden', 0, 1),
+(67, 'offensive', 0, 1),
+(68, 'images', 0, 1),
+(69, 'any', 0, 1),
+(70, 'which', 0, 1),
+(71, 'constitutes', 0, 1),
+(72, 'defamation', 0, 1),
+(73, 'harassment', 0, 1),
+(74, 'abuse', 0, 1),
+(75, 'strictly', 0, 1),
+(76, 'prohibited', 0, 1),
+(77, 'that', 0, 1),
+(78, 'sexually', 0, 1),
+(79, 'otherwise', 0, 1),
+(80, 'obscene', 0, 1),
+(81, 'racist', 0, 1),
+(82, 'overly', 0, 1),
+(83, 'discriminatory', 0, 1),
+(84, 'permitted', 0, 1),
+(85, 'user', 0, 1),
+(86, 'pictures', 0, 1),
+(87, 'use', 0, 1),
+(88, 'common', 0, 1),
+(89, 'sense', 0, 1),
+(90, 'while', 0, 1),
+(91, 'posting', 0, 1),
+(92, 'accountancy', 0, 1),
+(93, 'professionals', 0, 1),
+(94, 'cross', 0, 1),
+(95, 'questions', 0, 1),
+(96, 'please', 0, 1),
+(97, 'refrain', 0, 1),
+(98, 'from', 0, 1),
+(99, 'same', 0, 1),
+(100, 'question', 0, 1),
+(101, 'several', 0, 1),
+(102, 'there', 0, 1),
+(103, 'normally', 0, 1),
+(104, 'one', 0, 1),
+(105, 'forum', 0, 2),
+(106, 'most', 0, 1),
+(107, 'suitable', 0, 1),
+(108, 'help', 0, 1),
+(109, 'send', 0, 1),
+(110, 'you', 0, 1),
+(111, 'need', 0, 1),
+(112, 'make', 0, 1),
+(113, 'new', 0, 1),
+(114, 'thread', 0, 1),
+(115, 'appropriate', 0, 1),
+(116, 'then', 0, 1),
+(117, 'whole', 0, 1),
+(118, 'community', 0, 1),
+(119, 'can', 0, 1),
+(120, 'benefit', 0, 1),
+(121, 'remain', 0, 1),
+(122, 'respectful', 0, 1),
+(123, 'members', 0, 1),
+(124, 'all', 0, 1),
+(125, 'times', 0, 1),
+(126, 'should', 0, 1),
+(127, 'professional', 0, 1),
+(128, 'courteous', 0, 1),
+(129, 'have', 0, 1),
+(130, 'every', 0, 1),
+(131, 'right', 0, 1),
+(132, 'disagree', 0, 1),
+(133, 'fellow', 0, 1),
+(134, 'explain', 0, 1),
+(135, 'perspective', 0, 1),
+(136, 'however', 0, 1),
+(137, 'are', 0, 1),
+(138, 'free', 0, 1),
+(139, 'attack', 0, 1),
+(140, 'degrade', 0, 1),
+(141, 'insult', 0, 1),
+(142, 'belittle', 0, 1),
+(143, 'them', 0, 1),
+(144, 'quality', 0, 1),
+(145, 'does', 0, 1),
+(146, 'matter', 0, 1),
+(147, 'what', 0, 1),
+(148, 'title', 0, 1),
+(149, 'power', 0, 1),
+(150, 'hold', 0, 1),
+(151, 'expected', 0, 1),
+(152, 'obey', 0, 1),
+(153, 'rule', 0, 1),
+(154, 'rules', 0, 2),
+(155, 'regulations', 0, 1),
+(156, 'size', 0, 1),
+(157, '150', 0, 1),
+(158, 'vote', 0, 1);
 
 -- --------------------------------------------------------
 
@@ -2892,13 +3090,170 @@ CREATE TABLE IF NOT EXISTS `phpbb_search_wordmatch` (
 INSERT INTO `phpbb_search_wordmatch` (`post_id`, `word_id`, `title_match`) VALUES
 (2, 1, 0),
 (2, 1, 1),
+(5, 1, 1),
 (3, 2, 0),
+(4, 2, 0),
 (3, 3, 0),
 (3, 3, 1),
 (3, 4, 0),
 (3, 4, 1),
 (3, 5, 0),
-(3, 6, 1);
+(3, 6, 1),
+(5, 6, 0),
+(4, 7, 0),
+(4, 8, 0),
+(4, 9, 0),
+(4, 10, 0),
+(4, 11, 0),
+(4, 12, 0),
+(4, 13, 0),
+(4, 14, 0),
+(4, 15, 0),
+(4, 16, 0),
+(4, 17, 0),
+(4, 18, 0),
+(4, 19, 0),
+(4, 20, 0),
+(4, 21, 0),
+(4, 22, 0),
+(4, 23, 0),
+(4, 24, 0),
+(4, 25, 0),
+(4, 26, 0),
+(4, 27, 0),
+(4, 28, 0),
+(4, 29, 0),
+(4, 30, 0),
+(4, 31, 0),
+(4, 32, 0),
+(4, 33, 0),
+(4, 34, 0),
+(4, 35, 0),
+(4, 36, 0),
+(4, 37, 0),
+(4, 38, 0),
+(4, 39, 0),
+(4, 40, 0),
+(4, 41, 0),
+(4, 42, 0),
+(4, 43, 0),
+(4, 44, 0),
+(4, 45, 0),
+(4, 46, 0),
+(4, 47, 0),
+(4, 48, 0),
+(4, 49, 0),
+(4, 50, 0),
+(4, 51, 0),
+(4, 52, 0),
+(4, 53, 0),
+(4, 54, 0),
+(4, 55, 0),
+(4, 56, 0),
+(4, 57, 0),
+(4, 58, 0),
+(4, 59, 0),
+(4, 60, 0),
+(4, 61, 0),
+(4, 62, 0),
+(4, 63, 0),
+(4, 64, 0),
+(4, 65, 0),
+(4, 66, 0),
+(4, 67, 0),
+(4, 68, 0),
+(4, 69, 0),
+(4, 70, 0),
+(4, 71, 0),
+(4, 72, 0),
+(4, 73, 0),
+(4, 74, 0),
+(4, 75, 0),
+(4, 76, 0),
+(4, 77, 0),
+(4, 78, 0),
+(4, 79, 0),
+(4, 80, 0),
+(4, 81, 0),
+(4, 82, 0),
+(4, 83, 0),
+(4, 84, 0),
+(4, 85, 0),
+(4, 86, 0),
+(4, 87, 0),
+(4, 88, 0),
+(4, 89, 0),
+(4, 90, 0),
+(4, 91, 0),
+(4, 92, 0),
+(4, 93, 0),
+(4, 94, 0),
+(4, 95, 0),
+(4, 96, 0),
+(4, 97, 0),
+(4, 98, 0),
+(4, 99, 0),
+(4, 100, 0),
+(4, 101, 0),
+(4, 102, 0),
+(4, 103, 0),
+(4, 104, 0),
+(4, 105, 0),
+(4, 105, 1),
+(4, 106, 0),
+(4, 107, 0),
+(4, 108, 0),
+(4, 109, 0),
+(4, 110, 0),
+(4, 111, 0),
+(4, 112, 0),
+(4, 113, 0),
+(4, 114, 0),
+(4, 115, 0),
+(4, 116, 0),
+(4, 117, 0),
+(4, 118, 0),
+(4, 119, 0),
+(4, 120, 0),
+(4, 121, 0),
+(4, 122, 0),
+(4, 123, 0),
+(4, 124, 0),
+(4, 125, 0),
+(4, 126, 0),
+(4, 127, 0),
+(4, 128, 0),
+(4, 129, 0),
+(4, 130, 0),
+(4, 131, 0),
+(4, 132, 0),
+(4, 133, 0),
+(4, 134, 0),
+(4, 135, 0),
+(4, 136, 0),
+(4, 137, 0),
+(4, 138, 0),
+(4, 139, 0),
+(4, 140, 0),
+(4, 141, 0),
+(4, 142, 0),
+(4, 143, 0),
+(4, 144, 0),
+(4, 145, 0),
+(4, 146, 0),
+(4, 147, 0),
+(4, 148, 0),
+(4, 149, 0),
+(4, 150, 0),
+(4, 151, 0),
+(4, 152, 0),
+(4, 153, 0),
+(4, 154, 0),
+(4, 154, 1),
+(4, 155, 1),
+(4, 156, 0),
+(4, 157, 0),
+(5, 158, 1);
 
 -- --------------------------------------------------------
 
@@ -2927,8 +3282,8 @@ CREATE TABLE IF NOT EXISTS `phpbb_sessions` (
 --
 
 INSERT INTO `phpbb_sessions` (`session_id`, `session_user_id`, `session_last_visit`, `session_start`, `session_time`, `session_ip`, `session_browser`, `session_forwarded_for`, `session_page`, `session_viewonline`, `session_autologin`, `session_admin`, `session_forum_id`) VALUES
-('42b43a2678b22414de00fbc9a5a62449', 2, 1491995981, 1492027593, 1492027649, '::1', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0', '', 'viewforum.php?f=2', 1, 0, 1, 2),
-('884673585e505d8b60db90751cd75614', 2, 1491995981, 1492023961, 1492029534, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36', '', 'index.php', 1, 0, 1, 0);
+('5d60d961338d6ffeecbdf459147da819', 2, 1493202711, 1493204435, 1493204454, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36', '', 'adm/index.php?i=acp_styles&mode=style', 1, 0, 1, 0),
+('d0d8ff7d9091e86b34f16f735551a88e', 2, 1493202711, 1493204018, 1493204019, '::1', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0', '', 'index.php', 1, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -3036,7 +3391,7 @@ CREATE TABLE IF NOT EXISTS `phpbb_styles` (
   `bbcode_bitfield` varchar(255) COLLATE utf8_bin NOT NULL DEFAULT 'kNg=',
   `style_parent_id` int(4) unsigned NOT NULL DEFAULT '0',
   `style_parent_tree` text COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Dumping data for table `phpbb_styles`
@@ -3045,16 +3400,17 @@ CREATE TABLE IF NOT EXISTS `phpbb_styles` (
 INSERT INTO `phpbb_styles` (`style_id`, `style_name`, `style_copyright`, `style_active`, `style_path`, `bbcode_bitfield`, `style_parent_id`, `style_parent_tree`) VALUES
 (1, 'prosilver', '&copy; phpBB Limited', 1, 'prosilver', 'kNg=', 0, ''),
 (2, '*SE Gamer: Light', '© PlanetStyles.net - Premium phpBB 3.1 Styles', 1, 'SE_Gamer_Light', '+Ng=', 0, ''),
-(3, 'Black-Silver', '© phpBB Limited, 2016', 1, 'Black-Silver', '+Ng=', 1, 'prosilver'),
 (4, 'Visio', 'phpBB-fr.com team, 2017', 1, 'visio', '+Ng=', 1, 'prosilver'),
 (5, 'Orange_BBEs', '© phpBB Spain, 2003-2016', 1, 'Orange_BBEs', '+Ng=', 1, 'prosilver'),
 (6, 'ne-blackgreen', '© phpBB Limited, 2007 and nachtelb.de, 2014', 1, 'ne-blackgreen', '+Ng=', 1, 'prosilver'),
 (9, 'Absolution', '© PlanetStyles.net - Premium phpBB3 Styles', 1, 'Absolution', '+Ng=', 0, ''),
-(10, 'Black-Silver-Slim', '© phpBB Limited, 2016', 1, 'Black-Silver-Slim', '+Ng=', 3, 'prosilver/Black-Silver'),
-(11, 'Black-Silver-Split', '© phpBB Limited, 2016', 1, 'Black-Silver-Split', '+Ng=', 3, 'prosilver/Black-Silver'),
 (12, 'Blue Turtle', '© Cri|Studio, 2015-2017', 1, 'K_Blue_Turtle', '+Ng=', 1, 'prosilver'),
-(13, 'Flat Style', '© Ian Bradley 2017', 1, 'flat-style', '+Ng=', 0, ''),
-(16, 'Green-Style', '© phpBB Limited, 2016', 1, 'Green-Style', '+Ng=', 0, '');
+(16, 'Green-Style', '© phpBB Limited, 2016', 1, 'Green-Style', '+Ng=', 0, ''),
+(17, 'Flat Style', '© Ian Bradley 2017', 1, 'flat-style', '+Ng=', 1, 'prosilver'),
+(18, 'PBTech', '© PayBas, 2015', 1, 'pbtech', '+Ng=', 1, 'prosilver'),
+(19, 'PS4', '© Jester, 2015', 1, 'PS4', '+Ng=', 1, 'prosilver'),
+(20, 'AllanStyle-ShadowGlow', '© Allan Style, 2016 phpbb3.x-tk.ru', 1, 'AllanStyle-ShadowGlow', '+Ng=', 1, 'prosilver'),
+(21, 'SE Square Left', '© phpBB Limited, 2007', 1, 'se_square_left', '+Ng=', 1, 'prosilver');
 
 -- --------------------------------------------------------
 
@@ -3141,16 +3497,17 @@ CREATE TABLE IF NOT EXISTS `phpbb_topics` (
   `topic_posts_approved` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `topic_posts_unapproved` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `topic_posts_softdeleted` mediumint(8) unsigned NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Dumping data for table `phpbb_topics`
 --
 
 INSERT INTO `phpbb_topics` (`topic_id`, `forum_id`, `icon_id`, `topic_attachment`, `topic_reported`, `topic_title`, `topic_poster`, `topic_time`, `topic_time_limit`, `topic_views`, `topic_status`, `topic_type`, `topic_first_post_id`, `topic_first_poster_name`, `topic_first_poster_colour`, `topic_last_post_id`, `topic_last_poster_id`, `topic_last_poster_name`, `topic_last_poster_colour`, `topic_last_post_subject`, `topic_last_post_time`, `topic_last_view_time`, `topic_moved_id`, `topic_bumped`, `topic_bumper`, `poll_title`, `poll_start`, `poll_length`, `poll_max_options`, `poll_last_vote`, `poll_vote_change`, `topic_visibility`, `topic_delete_time`, `topic_delete_reason`, `topic_delete_user`, `topic_posts_approved`, `topic_posts_unapproved`, `topic_posts_softdeleted`) VALUES
-(1, 2, 0, 0, 0, 'Welcome to phpBB3', 2, 1488898091, 0, 1, 0, 0, 1, 'ting', 'AA0000', 1, 2, 'ting', 'AA0000', 'Welcome to phpBB3', 1488898091, 1491404805, 0, 0, 0, '', 0, 0, 1, 0, 0, 1, 0, '', 0, 1, 0, 0),
-(2, 16, 0, 0, 0, 'test', 2, 1491231563, 0, 2, 0, 0, 2, 'ting', 'AA0000', 2, 2, 'ting', 'AA0000', 'test', 1491231563, 1491231788, 0, 0, 0, '', 0, 0, 1, 0, 0, 1, 0, '', 0, 1, 0, 0),
-(3, 10, 0, 0, 0, 'RSS Feed Testing', 2, 1491992500, 0, 1, 0, 0, 3, 'ting', 'AA0000', 3, 2, 'ting', 'AA0000', 'RSS Feed Testing', 1491992500, 1491992501, 0, 0, 0, '', 0, 0, 1, 0, 0, 1, 0, '', 0, 1, 0, 0);
+(2, 16, 0, 0, 0, 'test', 2, 1491231563, 0, 4, 0, 0, 2, 'ting', 'AA0000', 2, 2, 'ting', 'AA0000', 'test', 1491231563, 1493200982, 0, 0, 0, '', 0, 0, 1, 0, 0, 1, 0, '', 0, 1, 0, 0),
+(3, 10, 0, 0, 0, 'RSS Feed Testing', 2, 1491992500, 0, 1, 0, 0, 3, 'ting', 'AA0000', 3, 2, 'ting', 'AA0000', 'RSS Feed Testing', 1491992500, 1491992501, 0, 0, 0, '', 0, 0, 1, 0, 0, 1, 0, '', 0, 1, 0, 0),
+(4, 2, 1, 0, 0, 'Forum Rules &amp; Regulations', 2, 1492083925, 0, 8, 0, 1, 4, 'ting', 'AA0000', 4, 2, 'ting', 'AA0000', 'Forum Rules &amp; Regulations', 1492083925, 1493204388, 0, 0, 0, '', 0, 0, 0, 0, 0, 1, 0, '', 0, 1, 0, 0),
+(5, 11, 0, 0, 0, 'Test Vote', 2, 1493201117, 0, 6, 0, 0, 5, 'ting', 'AA0000', 5, 2, 'ting', 'AA0000', 'Test Vote', 1493201117, 1493201608, 0, 0, 0, '', 0, 0, 1, 0, 0, 1, 0, '', 0, 1, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -3169,9 +3526,10 @@ CREATE TABLE IF NOT EXISTS `phpbb_topics_posted` (
 --
 
 INSERT INTO `phpbb_topics_posted` (`user_id`, `topic_id`, `topic_posted`) VALUES
-(2, 1, 1),
 (2, 2, 1),
-(2, 3, 1);
+(2, 3, 1),
+(2, 4, 1),
+(2, 5, 1);
 
 -- --------------------------------------------------------
 
@@ -3192,7 +3550,9 @@ CREATE TABLE IF NOT EXISTS `phpbb_topics_track` (
 
 INSERT INTO `phpbb_topics_track` (`user_id`, `topic_id`, `forum_id`, `mark_time`) VALUES
 (2, 2, 16, 1491231563),
-(2, 3, 10, 1491992500);
+(2, 3, 10, 1491992500),
+(2, 4, 2, 1492083992),
+(2, 5, 11, 1493201117);
 
 -- --------------------------------------------------------
 
@@ -3279,15 +3639,15 @@ CREATE TABLE IF NOT EXISTS `phpbb_users` (
   `user_new` tinyint(1) unsigned NOT NULL DEFAULT '1',
   `user_reminded` tinyint(4) NOT NULL DEFAULT '0',
   `user_reminded_time` int(11) unsigned NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Dumping data for table `phpbb_users`
 --
 
 INSERT INTO `phpbb_users` (`user_id`, `user_type`, `group_id`, `user_permissions`, `user_perm_from`, `user_ip`, `user_regdate`, `username`, `username_clean`, `user_password`, `user_passchg`, `user_email`, `user_email_hash`, `user_birthday`, `user_lastvisit`, `user_lastmark`, `user_lastpost_time`, `user_lastpage`, `user_last_confirm_key`, `user_last_search`, `user_warnings`, `user_last_warning`, `user_login_attempts`, `user_inactive_reason`, `user_inactive_time`, `user_posts`, `user_lang`, `user_timezone`, `user_dateformat`, `user_style`, `user_rank`, `user_colour`, `user_new_privmsg`, `user_unread_privmsg`, `user_last_privmsg`, `user_message_rules`, `user_full_folder`, `user_emailtime`, `user_topic_show_days`, `user_topic_sortby_type`, `user_topic_sortby_dir`, `user_post_show_days`, `user_post_sortby_type`, `user_post_sortby_dir`, `user_notify`, `user_notify_pm`, `user_notify_type`, `user_allow_pm`, `user_allow_viewonline`, `user_allow_viewemail`, `user_allow_massemail`, `user_options`, `user_avatar`, `user_avatar_type`, `user_avatar_width`, `user_avatar_height`, `user_sig`, `user_sig_bbcode_uid`, `user_sig_bbcode_bitfield`, `user_jabber`, `user_actkey`, `user_newpasswd`, `user_form_salt`, `user_new`, `user_reminded`, `user_reminded_time`) VALUES
-(1, 2, 1, '00000000000g13ydq8\nhwba88000000\nhwba88000000\n\n\n\n\n\nhwba88000000\nhwba88000000\nhwba88000000\nhwba88000000\n\nhwba88000000\nhwba88000000\nhwba88000000\nhwba88000000\nhwba88000000', 0, '', 1488898091, 'Anonymous', 'anonymous', '', 0, '', 0, '', 0, 0, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 'en', '', 'd M Y H:i', 1, 0, '', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 1, 1, 1, 0, 230271, '', '', 0, 0, '', '', '', '', '', '', 'bec27c50913b148b', 1, 0, 0),
-(2, 3, 5, 'zik0zjzik0zjzik0zg\nhwba88000000\nzik0zjzieeps\n\n\n\n\n\nzik0zjzieeps\nzik0zjzieeps\nzik0zjzieeps\nzik0zjzieeps\n\nzik0zjzieeps\nzik0zjzieeps\nzik0zjzieeps\nzik0zjzieeps\nhwba88000000', 0, '::1', 1488898091, 'ting', 'ting', '$2y$10$MQuxhAHPllIWThQ3gfF9ru.dEHdVTUDHoR330FsK40AvaP0sT5bZ2', 0, 'yassin.ting@gmail.com', 277347245621, '', 1491995981, 0, 1491992500, 'viewforum.php?f=2', '', 0, 0, 0, 0, 0, 0, 3, 'en', '', 'D M d, Y g:i a', 1, 1, 'AA0000', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 1, 1, 1, 1, 230271, '', '', 0, 0, '', '', '', '', '', '', '334f525a28588b5b', 0, 0, 0),
+(1, 2, 1, '00000000000g13ydq8\nhwba88000000\nhwba88000000\n\n\n\n\n\nhwba88000000\nhwba88000000\nhwba88000000\nhwba88000000\n\nhwba88000000\nhwba88000000\nhwba88000000\nhwba88000000\nhwba88000000', 0, '', 1488898091, 'Anonymous', 'anonymous', '', 0, '', 0, '', 0, 0, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 'en', '', 'd M Y H:i', 1, 0, '', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 1, 1, 1, 0, 230271, '', '', 0, 0, '', '', '', '', '', '', '3923d2ec546234d1', 1, 0, 0),
+(2, 3, 5, 'zik0zjzik0zjzik0zg\nhwba88000000\nzik0zjzieeps\n\n\n\n\n\nzik0zjzieeps\nzik0zjzieeps\nzik0zjzieeps\nzik0zjzieeps\n\nzik0zjzieeps\nzik0zjzieeps\nzik0zjzieeps\nzik0zjzieeps\nhwba88000000', 0, '::1', 1488898091, 'ting', 'ting', '$2y$10$MQuxhAHPllIWThQ3gfF9ru.dEHdVTUDHoR330FsK40AvaP0sT5bZ2', 0, 'yassin.ting@gmail.com', 277347245621, '', 1493202711, 0, 1493201117, 'adm/index.php', '', 0, 0, 0, 0, 0, 0, 4, 'en', '', 'D M d, Y g:i a', 1, 1, 'AA0000', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 1, 1, 1, 1, 230271, '', '', 0, 0, '', '', '', '', '', '', '712bcdcf38587a21', 0, 0, 0),
 (3, 2, 6, '', 0, '', 1488898097, 'AdsBot [Google]', 'adsbot [google]', '', 1488898097, '', 0, '', 0, 1488898097, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 'en', 'UTC', 'D M d, Y g:i a', 1, 0, '9E8DA7', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 0, 1, 1, 0, 230271, '', '', 0, 0, '', '', '', '', '', '', 'cd3584f2cbe91b18', 0, 0, 0),
 (4, 2, 6, '', 0, '', 1488898098, 'Alexa [Bot]', 'alexa [bot]', '', 1488898098, '', 0, '', 0, 1488898098, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 'en', 'UTC', 'D M d, Y g:i a', 1, 0, '9E8DA7', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 0, 1, 1, 0, 230271, '', '', 0, 0, '', '', '', '', '', '', 'c991ae8868100dcc', 0, 0, 0),
 (5, 2, 6, '', 0, '', 1488898099, 'Alta Vista [Bot]', 'alta vista [bot]', '', 1488898099, '', 0, '', 0, 1488898099, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 'en', 'UTC', 'D M d, Y g:i a', 1, 0, '9E8DA7', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 0, 1, 1, 0, 230271, '', '', 0, 0, '', '', '', '', '', '', '850931c83d347a2a', 0, 0, 0),
@@ -3333,7 +3693,8 @@ INSERT INTO `phpbb_users` (`user_id`, `user_type`, `group_id`, `user_permissions
 (45, 2, 6, '', 0, '', 1488898118, 'Yahoo Slurp [Bot]', 'yahoo slurp [bot]', '', 1488898118, '', 0, '', 0, 1488898118, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 'en', 'UTC', 'D M d, Y g:i a', 1, 0, '9E8DA7', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 0, 1, 1, 0, 230271, '', '', 0, 0, '', '', '', '', '', '', '265868574ee5e69f', 0, 0, 0),
 (46, 2, 6, '', 0, '', 1488898119, 'Yahoo [Bot]', 'yahoo [bot]', '', 1488898119, '', 0, '', 0, 1488898119, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 'en', 'UTC', 'D M d, Y g:i a', 1, 0, '9E8DA7', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 0, 1, 1, 0, 230271, '', '', 0, 0, '', '', '', '', '', '', '79cea51bbddf99df', 0, 0, 0),
 (47, 2, 6, '', 0, '', 1488898119, 'YahooSeeker [Bot]', 'yahooseeker [bot]', '', 1488898119, '', 0, '', 0, 1488898119, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 'en', 'UTC', 'D M d, Y g:i a', 1, 0, '9E8DA7', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 0, 1, 1, 0, 230271, '', '', 0, 0, '', '', '', '', '', '', '5102a7735669e596', 0, 0, 0),
-(48, 3, 2, '', 0, '::1', 1490179231, 'william', 'william', '$2y$10$zcv5zypxs2.L3xib7zfHt.u7TiMusBX4p1278Mpan/mzXCTZaaN7.', 1490179231, 'william@cct.ie', 333011526114, '', 1490179274, 1490179231, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 'en', 'UTC', 'D M d, Y g:i a', 1, 0, '', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 1, 1, 1, 1, 230271, '', '', 0, 0, '', '', '', '', '', '', 'b6858c16282077f2', 1, 0, 0);
+(48, 3, 2, '', 0, '::1', 1490179231, 'william', 'william', '$2y$10$zcv5zypxs2.L3xib7zfHt.u7TiMusBX4p1278Mpan/mzXCTZaaN7.', 1490179231, 'william@cct.ie', 333011526114, '', 1490179274, 1490179231, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 'en', 'UTC', 'D M d, Y g:i a', 1, 0, '', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 1, 1, 1, 1, 230271, '', '', 0, 0, '', '', '', '', '', '', 'b6858c16282077f2', 1, 0, 0),
+(49, 0, 2, '', 0, '::1', 1493202787, 'james', 'james', '$2y$10$iiITqyI655XMXSZTWsbSv.eXGL2/STuIbnloKv6rjbQInIzCB/Q7e', 1493202787, 'james@hotmail.com', 93351927217, '', 0, 1493202787, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 'en', 'Africa/Algiers', 'D M d, Y g:i a', 21, 0, '', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 1, 1, 1, 1, 230271, '', '', 0, 0, '', '', '', '', '', '', '106d0576126a0a32', 1, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -3404,7 +3765,9 @@ INSERT INTO `phpbb_user_group` (`group_id`, `user_id`, `group_leader`, `user_pen
 (6, 47, 0, 0),
 (2, 48, 0, 0),
 (7, 48, 0, 0),
-(5, 48, 0, 0);
+(5, 48, 0, 0),
+(2, 49, 0, 0),
+(7, 49, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -3520,7 +3883,9 @@ INSERT INTO `phpbb_user_notifications` (`item_type`, `item_id`, `user_id`, `meth
 ('notification.type.post', 0, 47, 'notification.method.email', 1),
 ('notification.type.topic', 0, 47, 'notification.method.email', 1),
 ('notification.type.post', 0, 48, 'notification.method.email', 1),
-('notification.type.topic', 0, 48, 'notification.method.email', 1);
+('notification.type.topic', 0, 48, 'notification.method.email', 1),
+('notification.type.post', 0, 49, 'notification.method.email', 1),
+('notification.type.topic', 0, 49, 'notification.method.email', 1);
 
 -- --------------------------------------------------------
 
@@ -3560,6 +3925,26 @@ CREATE TABLE IF NOT EXISTS `phpbb_zebra` (
   `friend` tinyint(1) unsigned NOT NULL DEFAULT '0',
   `foe` tinyint(1) unsigned NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `post_rank`
+--
+
+CREATE TABLE IF NOT EXISTS `post_rank` (
+  `forum_id` int(11) NOT NULL,
+  `topic_id` int(11) NOT NULL,
+  `vote` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `post_rank`
+--
+
+INSERT INTO `post_rank` (`forum_id`, `topic_id`, `vote`) VALUES
+(11, 5, 1),
+(11, 5, -1);
 
 --
 -- Indexes for dumped tables
@@ -4141,7 +4526,7 @@ ALTER TABLE `phpbb_lang`
 -- AUTO_INCREMENT for table `phpbb_log`
 --
 ALTER TABLE `phpbb_log`
-  MODIFY `log_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=174;
+  MODIFY `log_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=216;
 --
 -- AUTO_INCREMENT for table `phpbb_modules`
 --
@@ -4161,7 +4546,7 @@ ALTER TABLE `phpbb_notification_types`
 -- AUTO_INCREMENT for table `phpbb_posts`
 --
 ALTER TABLE `phpbb_posts`
-  MODIFY `post_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+  MODIFY `post_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `phpbb_privmsgs`
 --
@@ -4201,7 +4586,7 @@ ALTER TABLE `phpbb_reports_reasons`
 -- AUTO_INCREMENT for table `phpbb_search_wordlist`
 --
 ALTER TABLE `phpbb_search_wordlist`
-  MODIFY `word_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+  MODIFY `word_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=159;
 --
 -- AUTO_INCREMENT for table `phpbb_sitelist`
 --
@@ -4216,7 +4601,7 @@ ALTER TABLE `phpbb_smilies`
 -- AUTO_INCREMENT for table `phpbb_styles`
 --
 ALTER TABLE `phpbb_styles`
-  MODIFY `style_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
+  MODIFY `style_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=22;
 --
 -- AUTO_INCREMENT for table `phpbb_teampage`
 --
@@ -4226,12 +4611,12 @@ ALTER TABLE `phpbb_teampage`
 -- AUTO_INCREMENT for table `phpbb_topics`
 --
 ALTER TABLE `phpbb_topics`
-  MODIFY `topic_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+  MODIFY `topic_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `phpbb_users`
 --
 ALTER TABLE `phpbb_users`
-  MODIFY `user_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=49;
+  MODIFY `user_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=50;
 --
 -- AUTO_INCREMENT for table `phpbb_warnings`
 --

@@ -120,7 +120,7 @@ class __TwigTemplate_b379e8a32990c8e5ade03d733f371f497f41f8583895ffa717207ce8e8d
                 $local_file = $this->getEnvironment()->findTemplate($asset_path);
                 $asset->set_path($local_file, true);
             }
-            $asset->add_assets_version('19');
+            $asset->add_assets_version('39');
         }
         $this->getEnvironment()->get_assets_bag()->add_script($asset);        // line 40
         $asset_file = "admin.js";
@@ -131,7 +131,7 @@ class __TwigTemplate_b379e8a32990c8e5ade03d733f371f497f41f8583895ffa717207ce8e8d
                 $local_file = $this->getEnvironment()->findTemplate($asset_path);
                 $asset->set_path($local_file, true);
             }
-            $asset->add_assets_version('19');
+            $asset->add_assets_version('39');
         }
         $this->getEnvironment()->get_assets_bag()->add_script($asset);        // line 41
         echo "

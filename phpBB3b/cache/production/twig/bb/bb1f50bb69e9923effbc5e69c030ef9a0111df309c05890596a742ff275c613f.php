@@ -279,22 +279,9 @@ class __TwigTemplate_7c1999902ee432e3e44287cbe83e9bca3079e6135f7f7f919fdda73fb9c
         // line 83
         // line 84
         echo "\t\t\t<div class=\"inner\">
-
+            
 \t\t\t<div id=\"site-description\" class=\"site-description\">
-\t\t\t\t<a id=\"logo\" class=\"logo\" href=\"";
-        // line 87
-        if ((isset($context["U_SITE_HOME"]) ? $context["U_SITE_HOME"] : null)) {
-            echo (isset($context["U_SITE_HOME"]) ? $context["U_SITE_HOME"] : null);
-        } else {
-            echo (isset($context["U_INDEX"]) ? $context["U_INDEX"] : null);
-        }
-        echo "\" title=\"";
-        if ((isset($context["U_SITE_HOME"]) ? $context["U_SITE_HOME"] : null)) {
-            echo $this->env->getExtension('phpbb')->lang("SITE_HOME");
-        } else {
-            echo $this->env->getExtension('phpbb')->lang("INDEX");
-        }
-        echo "\"><span class=\"site_logo\"></span></a>
+\t\t\t\t
 \t\t\t\t<h1>";
         // line 88
         echo (isset($context["SITENAME"]) ? $context["SITENAME"] : null);
@@ -302,12 +289,12 @@ class __TwigTemplate_7c1999902ee432e3e44287cbe83e9bca3079e6135f7f7f919fdda73fb9c
 \t\t\t\t<p>";
         // line 89
         echo (isset($context["SITE_DESCRIPTION"]) ? $context["SITE_DESCRIPTION"] : null);
-        echo "</p>
+        echo "</p> 
 \t\t\t\t<p class=\"skiplink\"><a href=\"#start_here\">";
         // line 90
         echo $this->env->getExtension('phpbb')->lang("SKIP");
         echo "</a></p>
-\t\t\t</div>
+\t\t\t</div> 
 
 \t\t\t";
         // line 93
@@ -426,7 +413,7 @@ class __TwigTemplate_7c1999902ee432e3e44287cbe83e9bca3079e6135f7f7f919fdda73fb9c
 
     public function getDebugInfo()
     {
-        return array (  415 => 131,  412 => 130,  402 => 126,  398 => 124,  396 => 123,  391 => 120,  390 => 119,  386 => 117,  373 => 116,  372 => 115,  369 => 114,  368 => 113,  364 => 111,  362 => 110,  354 => 105,  349 => 103,  343 => 102,  338 => 100,  334 => 99,  326 => 98,  321 => 96,  318 => 95,  315 => 94,  314 => 93,  308 => 90,  304 => 89,  300 => 88,  286 => 87,  281 => 84,  280 => 83,  273 => 78,  272 => 77,  263 => 75,  259 => 73,  258 => 72,  253 => 70,  250 => 69,  249 => 68,  241 => 65,  237 => 63,  229 => 61,  227 => 60,  224 => 59,  216 => 57,  214 => 56,  211 => 55,  203 => 53,  201 => 52,  196 => 50,  192 => 49,  187 => 48,  170 => 33,  168 => 32,  158 => 24,  152 => 22,  150 => 21,  147 => 20,  144 => 18,  131 => 17,  118 => 16,  107 => 15,  96 => 14,  85 => 13,  74 => 12,  63 => 11,  61 => 10,  36 => 8,  32 => 7,  22 => 2,  19 => 1,);
+        return array (  402 => 131,  399 => 130,  389 => 126,  385 => 124,  383 => 123,  378 => 120,  377 => 119,  373 => 117,  360 => 116,  359 => 115,  356 => 114,  355 => 113,  351 => 111,  349 => 110,  341 => 105,  336 => 103,  330 => 102,  325 => 100,  321 => 99,  313 => 98,  308 => 96,  305 => 95,  302 => 94,  301 => 93,  295 => 90,  291 => 89,  287 => 88,  281 => 84,  280 => 83,  273 => 78,  272 => 77,  263 => 75,  259 => 73,  258 => 72,  253 => 70,  250 => 69,  249 => 68,  241 => 65,  237 => 63,  229 => 61,  227 => 60,  224 => 59,  216 => 57,  214 => 56,  211 => 55,  203 => 53,  201 => 52,  196 => 50,  192 => 49,  187 => 48,  170 => 33,  168 => 32,  158 => 24,  152 => 22,  150 => 21,  147 => 20,  144 => 18,  131 => 17,  118 => 16,  107 => 15,  96 => 14,  85 => 13,  74 => 12,  63 => 11,  61 => 10,  36 => 8,  32 => 7,  22 => 2,  19 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -513,13 +500,13 @@ class __TwigTemplate_7c1999902ee432e3e44287cbe83e9bca3079e6135f7f7f919fdda73fb9c
 /* 		<div class="headerbar" role="banner">*/
 /* 		<!-- EVENT overall_header_headerbar_before -->*/
 /* 			<div class="inner">*/
-/* */
+/*             */
 /* 			<div id="site-description" class="site-description">*/
-/* 				<a id="logo" class="logo" href="<!-- IF U_SITE_HOME -->{U_SITE_HOME}<!-- ELSE -->{U_INDEX}<!-- ENDIF -->" title="<!-- IF U_SITE_HOME -->{L_SITE_HOME}<!-- ELSE -->{L_INDEX}<!-- ENDIF -->"><span class="site_logo"></span></a>*/
+/* 				*/
 /* 				<h1>{SITENAME}</h1>*/
-/* 				<p>{SITE_DESCRIPTION}</p>*/
+/* 				<p>{SITE_DESCRIPTION}</p> */
 /* 				<p class="skiplink"><a href="#start_here">{L_SKIP}</a></p>*/
-/* 			</div>*/
+/* 			</div> */
 /* */
 /* 			<!-- EVENT overall_header_searchbox_before -->*/
 /* 			<!-- IF S_DISPLAY_SEARCH and not S_IN_SEARCH -->*/

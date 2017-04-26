@@ -228,7 +228,8 @@ class ucp_prefs
 					'post_sk'		=> $request->variable('post_sk', (!empty($user->data['user_post_sortby_type'])) ? $user->data['user_post_sortby_type'] : 't'),
 					'post_sd'		=> $request->variable('post_sd', (!empty($user->data['user_post_sortby_dir'])) ? $user->data['user_post_sortby_dir'] : 'a'),
 					'post_st'		=> $request->variable('post_st', (!empty($user->data['user_post_show_days'])) ? (int) $user->data['user_post_show_days'] : 0),
-
+					
+					
 					'images'		=> $request->variable('images', (bool) $user->optionget('viewimg')),
 					'flash'			=> $request->variable('flash', (bool) $user->optionget('viewflash')),
 					'smilies'		=> $request->variable('smilies', (bool) $user->optionget('viewsmilies')),
@@ -268,6 +269,8 @@ class ucp_prefs
 						),
 						'post_sd'	=> array(
 							array('string', false, 1, 1),
+						
+							
 							array('match', false, '#(a|d)#'),
 						),
 					));
@@ -299,6 +302,8 @@ class ucp_prefs
 
 							'user_topic_show_days'	=> $data['topic_st'],
 							'user_post_show_days'	=> $data['post_st'],
+							
+							
 						);
 
 						/**
@@ -420,7 +425,8 @@ class ucp_prefs
 					'S_SIGS'			=> $data['sigs'],
 					'S_AVATARS'			=> $data['avatars'],
 					'S_DISABLE_CENSORS'	=> $data['wordcensor'],
-
+					
+					
 					'S_CHANGE_CENSORS'		=> ($auth->acl_get('u_chgcensors') && $config['allow_nocensors']) ? true : false,
 
 					'S_TOPIC_SORT_DAYS'		=> $s_limit_topic_days,

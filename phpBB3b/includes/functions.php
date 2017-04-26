@@ -4826,3 +4826,47 @@ function phpbb_get_board_contact_link(\phpbb\config\config $config, $phpbb_root_
 		return 'mailto:' . htmlspecialchars($config['board_contact']);
 	}
 }
+
+function add_vote_to_db($forum_id, $topic_id, $vote)
+{
+	$DBH = connect_to_db();
+	$sql = 'INSERT INTO post_rank VALUES(' . $forum_id . ', ' . $topic_id . ', ' . $vote . ');';
+	$sth = $DBH->prepare($sql);
+	$sth->execute();
+}
+
+function get_topic_upvotes($forum_id, $topic_id)
+{
+	$DBH = connect_to_db();
+	$sql = 'select count(vote) from post_rank where forum_id = ' . $forum_id . ' and topic_id = ' . $topic_id . ' and vote = 1;';
+	$sth = $DBH->prepare($sql);
+	$sth->execute();
+	$result = $sth->fetchAll();
+	foreach($result as $item){
+		return $item['count(vote)'];
+	}
+}
+
+function get_topic_downvotes($forum_id, $topic_id)
+{
+	$DBH = connect_to_db();
+	$sql = 'select count(vote) from post_rank where forum_id = ' . $forum_id . ' and topic_id = ' . $topic_id . ' and vote = -1;';
+	$sth = $DBH->prepare($sql);
+	$sth->execute();
+	$result = $sth->fetchAll();
+	foreach($result as $item){
+		return $item['count(vote)'];
+	}
+}
+
+function connect_to_db()
+{
+	try{
+		$host='127.0.0.1';
+		$dbname='stym';
+		$user='root';
+		$pass='';
+		$DBH = new PDO("mysql:host=$host;dbname=$dbname",$user,$pass);
+	}catch(PDOException $e){echo 'Error';}
+	return $DBH;
+}
